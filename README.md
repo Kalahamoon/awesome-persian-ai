@@ -26,8 +26,8 @@
 
 ### 🇮🇷 درود و سپاس از پیشگامان هوش مصنوعی فارسی
 
-> **پیام تقدیر:**  
-> صمیمانه‌ترین درودها و تبریکات نثار تمامی مهندسان، پژوهشگران، توسعه‌دهندگان متن‌باز و کارآفرینان ایرانی در سراسر گیتی — از دانشگاه‌ها و آزمایشگاه‌های پیشرو جهان تا تیم‌های مستقل و استارتاپ‌های پرتلاش داخل کشور — که با وجود تمامی محدودیت‌ها، تحریم‌ها و موانع زیرساختی، با همت و دانش والای خود چراغ زبان، فرهنگ و هوش مصنوعی فارسی را در خط مقدم فناوری جهان روشن و پرفروغ نگاه داشته‌اند. این هاب ثمره و بازتابی از کوشش‌های ماندگار شماست. 🦁✨
+> **پیام تقدیر و افتخار:**  
+> صمیمانه‌ترین درودها و تبریکات نثار تمامی دانشمندان، مهندسان نرم‌افزار، پژوهشگران هوش مصنوعی، فعالان جامعه متن‌باز و کارآفرینان ایرانی در سراسر کره زمین — از مراکز تحقیقاتی پیشرو در اروپا و آمریکای شمالی تا استارتاپ‌ها، شرکت‌های دانش‌بنیان و توسعه‌دهندگان مستقل در جای‌جای ایران عزیز — که با وجود پیچیده‌ترین شرایط تحریمی، موانع زیرساختی و نابرابری‌های دسترسی، هرگز متوقف نشدند و با پشتکار، ایثار علمی و خلاقیت ناب خود، جایگاه زبان، فرهنگ و هوش مصنوعی فارسی را در صدر تحولات جهانی پاس داشتند. این هاب تقدیم به تک‌تک شما همراهان سرافراز است. 🦁✨
 
 ---
 
@@ -41,7 +41,8 @@
 | `[Open-Source]` | **متن‌باز** | سورس‌کد و وزن‌های مدل به‌صورت رایگان و عمومی در گیت‌هاب یا هاگینگ‌فیس موجود است |
 | `[API-Gateway]` | **درگاه API** | سرویس ارائه‌دهنده توکن و کلید API سازگار با استاندارد OpenAI / Claude |
 | `[Agent]` | **عامل هوشمند** | ابزارها و سیستم‌های دارای چرخه تصمیم‌گیری و اجرای وظایف چندمرحله‌ای |
-| `[Benchmark]` | **ارزیابی و تست** | فریم‌ورک‌ها و آزمون‌های سنجش کارایی و امنیت مدل‌ها |
+| `[Leaderboard]` | **لیدربورد و ارزیابی** | جداول رتبه‌بندی رقابتی و بنچ‌مارک‌های اعتبارسنجی مدل‌ها |
+| `[Multimodal]` | **چندوجهی** | مدل‌های متصل‌کننده متن به تصویر، ویدیو یا صوت (مانند CLIP) |
 | `[Free]` | **کاملاً رایگان** | استفاده بدون هزینه مالی و محدودیت پرداختی |
 | `[Freemium]` | **اعتبار اولیه / حجمی** | دارای بسته تست رایگان با امکان خرید بسته‌های مصرفی |
 | `[Commercial]` | **تجاری / سازمانی** | نیازمند اشتراک، خرید کلید تجاری یا قرارداد شرکتی |
@@ -61,12 +62,12 @@
   - [2.2. زیرساخت‌های ابری پردازش هوش مصنوعی و GPU](#22-زیرساختهای-ابری-پردازش-هوش-مصنوعی-و-gpu)
 - [3. 🧠 مدل‌های زبانی و بنیادی فارسی (LLMs & Foundation Models)](#3--مدلهای-زبانی-و-بنیادی-فارسی-llms--foundation-models)
   - [3.1. مدل‌های متن‌باز و وزن‌های زبانی](#31-مدلهای-متنباز-و-وزنهای-زبانی)
-  - [3.2. بنچ‌مارک‌ها و چارچوب‌های ارزیابی (Eval Harnesses)](#32-بنچمارکها-و-چارچوبهای-ارزیابی-eval-harnesses)
+  - [3.2. لیدربوردها و بنچ‌مارک‌های ارزیابی (Leaderboards & Evals)](#32-لیدربوردها-و-بنچمارکهای-ارزیابی-leaderboards--evals)
 - [4. 🤖 فریم‌ورک‌ها و سیستم‌های چندایجنتیک (Agentic Frameworks)](#4--فریمورکها-و-سیستمهای-چندایجنتیک-agentic-frameworks)
 - [5. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)](#5--پردازش-گفتار-صوت-و-دوبله-speech-stt--tts)
   - [5.1. تبدیل گفتار به متن (Speech-to-Text)](#51-تبدیل-گفتار-به-متن-speech-to-text)
   - [5.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)](#52-تبدیل-متن-به-گفتار-و-شبیهسازی-صدا-text-to-speech)
-- [6. 👁️ بینایی ماشین و سندکاوی (Vision, OCR & Document AI)](#6--بینایی-ماشین-و-سندکاوی-vision-ocr--document-ai)
+- [6. 👁️ بینایی ماشین و مدل‌های چندوجهی (Vision, OCR & Multimodal)](#6--بینایی-ماشین-و-مدلهای-چندوجهی-vision-ocr--multimodal)
 - [7. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)](#7--ابزارهای-بازیابی-اطلاعات-و-rag-بومی-persian-rag--embeddings)
   - [7.1. مدل‌های برداری (Embedding Models)](#71-مدلهای-برداری-embedding-models)
   - [7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#72-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
@@ -153,9 +154,11 @@
 | **آوا (Ava-LLM)** | `[Open-Source]` `[Local-CPU]` | Qwen-2.5 / Gemma | 2B / 7B | بسیار سبک، طراحی‌شده جهت استقرار لوکال روی لپ‌تاپ و سرورهای بدون کارت گرافیک با Ollama |
 | **مجموعه مدل‌های هزار (Hezar)** | `[Open-Source]` `[Transformers]` | BERT / RoBERTa / T5 | چندگانه | مدل‌های ویژه تسک‌های تخصصی: طبقه‌بندی احساسات، تشخیص نام اشخاص (NER) و خلاصه‌سازی متون |
 
-### 3.2. بنچ‌مارک‌ها و چارچوب‌های ارزیابی (Eval Harnesses)
+### 3.2. لیدربوردها و بنچ‌مارک‌های ارزیابی (Leaderboards & Evals)
 
+* **[Open Persian LLM Leaderboard (PartAI)](https://huggingface.co/spaces/PartAI/open-persian-llm-leaderboard)** `[Leaderboard]` `[Top-Rank]` — لیدربورد رسمی و جامع ارزیابی رقابتی مدل‌های زبانی فارسی بر روی پلتفرم هاگینگ‌فیس.
 * **[persian-llm-eval](https://github.com/heyparsadev/persian-llm-eval)** `[Open-Source]` `[Benchmark]` — بنچ‌مارک استاندارد مدل‌های زبانی در زبان فارسی شامل ۳۰۰ تست در ۱۰ حوزه مختلف و جدول لیدربورد رتبه‌بندی مدل‌ها.
+* **[PersianMMLU Benchmark](https://huggingface.co/spaces/raia-center/PersianMMLU)** `[Benchmark]` `[MMLU]` — بنچ‌مارک دانش چندرشته‌ای (۵۷ رشته دانشگاهی و تخصصی) بومی‌سازی‌شده به زبان فارسی.
 * **[ParsiEval](https://github.com/mshojaei77/ParsiEval)** `[Open-Source]` `[Benchmark]` — ارزیابی توانایی درک متون، استدلال و ریاضیات در مدل‌های زبانی بزرگ برای زبان فارسی.
 * **[ParsBench](https://github.com/ParsBench/ParsBench)** `[Open-Source]` `[Toolkit]` — مجموعه ابزار و دیتاست برای محک زدن تسک‌های پیشرفته زبان فارسی.
 * **[TAAROFBENCH](https://github.com/niktaas/TAAROFBENCH)** `[Research]` `[EMNLP 2025]` — ارزیابی مدل‌های زبانی در درک فرهنگ رفتاری، کنایه‌ها و تعارف در ارتباطات ایرانی.
@@ -183,6 +186,7 @@
 * **[wav2vec2-large-xlsr-53-persian](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-persian)** `[HuggingFace]` `[STT]` — پردانلودترین مدل تشخیص گفتار فارسی در هاگینگ‌فیس با نزدیک به یک میلیون بار دریافت.
 * **[Wav2Vec2 Persian v3 (m3hrdadfi)](https://huggingface.co/m3hrdadfi/wav2vec2-large-xlsr-persian-v3)** `[Open-Source]` — مدل بهینه‌شده wav2vec2 برای بازشناسی گفتار فارسی با نرخ خطای واژگانی بسیار پایین.
 * **[Whisper-Persian-v4 (nezamisafa)](https://huggingface.co/nezamisafa/whisper-persian-v4)** `[Open-Source]` `[Whisper]` — مدل بهینه‌شده ویسپر لارج ۳ برای زبان فارسی با دقت بسیار بالا در گفتار محاوره‌ای.
+* **[Persian ASR Leaderboard](https://huggingface.co/spaces/navidved/open_persian_asr_leaderboard)** `[Leaderboard]` `[Benchmarking]` — لیدربورد مقایسه‌ای عملکرد مدل‌های بازشناسی گفتار فارسی بر روی مجموعه داده‌های استاندارد.
 * **[PersianScribe for Apple Silicon](https://github.com/duuuude/PersianScribe-for-Apple-Silicon)** `[Open-Source]` `[Offline]` — پیاده‌سازی آفلاین تبدیل گفتار فارسی به متن همراه با تفکیک گوینده (Diarization) و شتاب‌دهی سخت‌افزاری بر روی پردازنده‌های M1/M2/M3/M4 اپل.
 * **[Nemotron ASR Streaming Farsi](https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi)** `[Open-Source]` `[Streaming]` — تشخیص گفتار استریمینگ و بلادرنگ زبان فارسی مبتنی بر معماری نیموترون انویدیا.
 * **[فارس‌آوا (FarsAva / Amerandish)](https://amerandish.com)** `[Commercial]` `[API]` — از باسابقه‌ترین سرویس‌های تجاری تایپ صوتی و تبدیل گفتار به متن با دقت بسیار بالا در محیط‌های پرسروصدا.
@@ -199,8 +203,9 @@
 
 ---
 
-## 6. 👁️ بینایی ماشین و سندکاوی (Vision, OCR & Document AI)
+## 6. 👁️ بینایی ماشین و مدل‌های چندوجهی (Vision, OCR & Multimodal)
 
+* **[CLIPfa (سجاد ایوبی)](https://github.com/sajjjadayobi/CLIPfa)** `[Open-Source]` `[Multimodal]` — مدل اتصال متن و تصویر در زبان فارسی (بر پایه CLIP OpenAI) برای جستجوی تصویری با پرسش‌های فارسی و دسته‌بندی صفر-شات تصویر.
 * **[Qwen2-VL-Persian-Arabic-OCR](https://huggingface.co/mohajesmaeili/Qwen3-VL-2B-Persian-Arabic-Ocr-v1.0)** `[Vision-LLM]` — مدل بینایی زبان (VLM) ویژه خواندن و دیجیتالی کردن اسناد خطی، چاپی و فرمول‌های ریاضی فارسی.
 * **[Persian OCR Master](https://github.com/JENOVASir/persianAi-OCR-MASTER)** `[Open-Source]` — وب‌اپلیکیشن استخراج متن از تصاویر اسناد، کتاب‌ها و دست‌خط‌های فارسی با امکان استخراج فرمول‌های ریاضی.
 * **[PDF-OCR-Math2LaTeX](https://github.com/Sadeghizad/pdf-ocr-fas-eng-math2latex)** `[Desktop]` `[LaTeX]` — استخراج متون دوزبانه فارسی و انگلیسی از کتاب‌ها با تبدیل هوشمند معادلات ریاضی به کدهای استاندارد لایتک.
@@ -262,6 +267,7 @@
 
 ## 11. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
 
+* **[PersianQA](https://github.com/sajjjadayobi/PersianQA)** `[Dataset]` `[QA]` — اولین مجموعه داده استاندارد پرسش و پاسخ زبان فارسی مبتنی بر متون ویکی‌پدیا با بیش از ۹,۰۰۰ جفت پرسش و پاسخ.
 * **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** `[Audio Dataset]` — بزرگ‌ترین دیتاست متن‌باز گفتار فارسی با بیش از ۱۱۴ ساعت صوت بازنویسی‌شده با ابزارهای جمع‌آوری داده.
 * **[Persian Raw Text (80GB)](https://github.com/persiannlp/persian-raw-text)** `[Corpus]` — حدود ۸۰ گیگابایت متن خام تمیزشده فارسی برای آموزش اولیه (Pre-training) مدل‌های زبانی بزرگ.
 * **[SentiPers Corpus](https://github.com/phosseini/SentiPers)** `[Research]` `[Sentiment]` — پیکره مرجع تحلیل احساسات در زبان فارسی منتشرشده در arXiv.
