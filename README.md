@@ -53,16 +53,17 @@
 - [3. 🧠 مدل‌های زبانی و بنیادی فارسی (LLMs & Foundation Models)](#3--مدلهای-زبانی-و-بنیادی-فارسی-llms--foundation-models)
   - [3.1. مدل‌های متن‌باز و وزن‌های زبانی](#31-مدلهای-متنباز-و-وزنهای-زبانی)
   - [3.2. بنچ‌مارک‌ها و چارچوب‌های ارزیابی (Eval Harnesses)](#32-بنچمارکها-و-چارچوبهای-ارزیابی-eval-harnesses)
-- [4. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)](#4--پردازش-گفتار-صوت-و-دوبله-speech-stt--tts)
-  - [4.1. تبدیل گفتار به متن (Speech-to-Text)](#41-تبدیل-گفتار-به-متن-speech-to-text)
-  - [4.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)](#42-تبدیل-متن-به-گفتار-و-شبیهسازی-صدا-text-to-speech)
-- [5. 👁️ بینایی ماشین و سندکاوی (Vision, OCR & Document AI)](#5--بینایی-ماشین-و-سندکاوی-vision-ocr--document-ai)
-- [6. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)](#6--ابزارهای-بازیابی-اطلاعات-و-rag-بومی-persian-rag--embeddings)
-  - [6.1. مدل‌های برداری (Embedding Models)](#61-مدلهای-برداری-embedding-models)
-  - [6.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#62-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
-- [7. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)](#7--کتابخانهها-و-ابزارهای-مهندسی-زبان-persian-nlp-toolkits)
-- [8. 🖥️ افزونه‌ها، ابزارهای مرورگر و رابط‌های کاربری (Extensions & RTL)](#8--افزونهها-ابزارهای-مرورگر-و-رابطهای-کاربری-extensions--rtl)
-- [9. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#9--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
+- [4. 🤖 فریم‌ورک‌ها و سیستم‌های چندایجنتیک (Agentic Frameworks)](#4--فریمورکها-و-سیستمهای-چندایجنتیک-agentic-frameworks)
+- [5. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)](#5--پردازش-گفتار-صوت-و-دوبله-speech-stt--tts)
+  - [5.1. تبدیل گفتار به متن (Speech-to-Text)](#51-تبدیل-گفتار-به-متن-speech-to-text)
+  - [5.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)](#52-تبدیل-متن-به-گفتار-و-شبیهسازی-صدا-text-to-speech)
+- [6. 👁️ بینایی ماشین و سندکاوی (Vision, OCR & Document AI)](#6--بینایی-ماشین-و-سندکاوی-vision-ocr--document-ai)
+- [7. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)](#7--ابزارهای-بازیابی-اطلاعات-و-rag-بومی-persian-rag--embeddings)
+  - [7.1. مدل‌های برداری (Embedding Models)](#71-مدلهای-برداری-embedding-models)
+  - [7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#72-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
+- [8. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)](#8--کتابخانهها-و-ابزارهای-مهندسی-زبان-persian-nlp-toolkits)
+- [9. 🖥️ افزونه‌ها، ابزارهای مرورگر و رابط‌های کاربری (Extensions & RTL)](#9--افزونهها-ابزارهای-مرورگر-و-رابطهای-کاربری-extensions--rtl)
+- [10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#10--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
 
 ---
 
@@ -129,49 +130,73 @@
 | :--- | :---: | :---: | :---: | :--- |
 | **درنا (Dorna)** | `[Open-Source]` `[Weights]` | LLaMA / Mistral | 8B | بهینه‌سازی‌شده برای پاسخ‌گویی سلیس، مکالمات محاوره‌ای و متن‌های نامه‌نگاری اداری در ایران |
 | **مرال (Maral-7B)** | `[Open-Source]` `[Weights]` | Mistral-7B | 7B | از معتبرترین مدل‌های پایه فارسی با درک عمیق از استعاره‌ها و ریزه‌کاری‌های زبان فارسی |
+| **PersianMind (دانشگاه تهران)** | `[Open-Source]` `[Weights]` | LLaMA-2 | 7B | مدل زبانی پژوهشی دانشگاه تهران برای درک مفاهیم علمی، ادبی و پرسش و پاسخ فارسی |
 | **سینا (Sina-LLM)** | `[Open-Source]` `[Weights]` | LLaMA-3 | 8B | آموزش‌دیده روی حجم وسیعی از متون فارسی برای ارتقای توانایی استدلال، کدنویسی و ترجمه روان |
+| **AVA-Llama-3 & Mistral** | `[Open-Source]` `[Weights]` | LLaMA-3 / Mistral | 8B / 7B | سری مدل‌های آوا با فاین‌تیون باکیفیت و عملکرد روان در محاوره فارسی |
+| **Gemma-3-Persian** | `[Open-Source]` `[Weights]` | Google Gemma | 4B | فاین‌تیون دقیق بر روی نسل جدید مدل‌های سبک جما برای چت و ترجمه |
 | **آوا (Ava-LLM)** | `[Open-Source]` `[Local-CPU]` | Qwen-2.5 / Gemma | 2B / 7B | بسیار سبک، طراحی‌شده جهت استقرار لوکال روی لپ‌تاپ و سرورهای بدون کارت گرافیک با Ollama |
 | **مجموعه مدل‌های هزار (Hezar)** | `[Open-Source]` `[Transformers]` | BERT / RoBERTa / T5 | چندگانه | مدل‌های ویژه تسک‌های تخصصی: طبقه‌بندی احساسات، تشخیص نام اشخاص (NER) و خلاصه‌سازی متون |
 
 ### 3.2. بنچ‌مارک‌ها و چارچوب‌های ارزیابی (Eval Harnesses)
 
 * **[persian-llm-eval](https://github.com/heyparsadev/persian-llm-eval)** `[Open-Source]` `[Benchmark]` — بنچ‌مارک استاندارد مدل‌های زبانی در زبان فارسی شامل ۳۰۰ تست در ۱۰ حوزه مختلف و جدول لیدربورد رتبه‌بندی مدل‌ها.
+* **[ParsiEval](https://github.com/mshojaei77/ParsiEval)** `[Open-Source]` `[Benchmark]` — ارزیابی توانایی درک متون، استدلال و ریاضیات در مدل‌های زبانی بزرگ برای زبان فارسی.
+* **[ParsBench](https://github.com/ParsBench/ParsBench)** `[Open-Source]` `[Toolkit]` — مجموعه ابزار و دیتاست برای محک زدن تسک‌های پیشرفته زبان فارسی.
+* **[TAAROFBENCH](https://github.com/niktaas/TAAROFBENCH)** `[Research]` `[EMNLP 2025]` — ارزیابی مدل‌های زبانی در درک فرهنگ رفتاری، کنایه‌ها و تعارف در ارتباطات ایرانی.
 * **[Persian-LLM-Security-Evaluation](https://github.com/Haniyesabeghi/Persian-LLM-Security-Evaluation-BA)** `[Research]` — فریم‌ورک تحلیل آسیب‌پذیری و ارزیابی نفوذ از طریق Prompt Injection روی مدل‌های بومی درنا و مرال.
 
 ---
 
-## 4. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)
+## 4. 🤖 فریم‌ورک‌ها و سیستم‌های چندایجنتیک (Agentic Frameworks)
 
-### 4.1. تبدیل گفتار به متن (Speech-to-Text)
+ابزارها و چارچوب‌های طراحی عامل‌های هوشمند خودمختار با پشتیبانی از ابزارهای فارسی:
 
+* **[LangGraph Multi-Agent Persian](https://github.com/SaharZarbafi/langgraph-multi-agent-persian)** `[Open-Source]` `[Multi-Agent]` — سیستم پروداکشن ایجنتیک با معماری Actor-Critic و مسیریابی هوشمند میان مدل‌های مختلف برای انجام تسک‌های مرکب.
+* **[Doctor Agent](https://github.com/SirBNL/doctor-agent)** `[Open-Source]` `[Agent]` — ایجنت هوشمند نوبت‌دهی پزشکی به زبان فارسی با قابلیت فراخوانی ابزار (Tool Calling) و اجرای کاملاً محلی با Ollama.
+* **[Phone Agent (منشی تلفنی هوشمند)](https://github.com/sepehr071/phone-agent)** `[Open-Source]` `[Voice Agent]` — پاسخ‌گویی خودکار تلفنی بر بستر استریسک (Asterisk)، تبدیل گفتار به متن، تصمیم‌گیری زبانی و پاسخ صوتی بلادرنگ به فارسی روان.
+
+---
+
+## 5. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)
+
+### 5.1. تبدیل گفتار به متن (Speech-to-Text)
+
+* **[wav2vec2-large-xlsr-53-persian](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-persian)** `[HuggingFace]` `[STT]` — پردانلودترین مدل تشخیص گفتار فارسی در هاگینگ‌فیس با نزدیک به یک میلیون بار دریافت.
+* **[Wav2Vec2 Persian v3 (m3hrdadfi)](https://huggingface.co/m3hrdadfi/wav2vec2-large-xlsr-persian-v3)** `[Open-Source]` — مدل بهینه‌شده wav2vec2 برای بازشناسی گفتار فارسی با نرخ خطای واژگانی بسیار پایین.
 * **[OpenAI Whisper (Persian Fine-tuned)](https://github.com/devie-dev/persian-stt-models)** `[Open-Source]` — پیاده‌سازی‌های فاین‌تیون‌شده مدل Whisper برای شناسایی کلمات عامیانه، لهجه‌ها و اصطلاحات تخصصی فارسی.
+* **[Nemotron ASR Streaming Farsi](https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi)** `[Open-Source]` `[Streaming]` — تشخیص گفتار استریمینگ و بلادرنگ زبان فارسی مبتنی بر معماری نیموترون انویدیا.
 * **[فارس‌آوا (FarsAva / Amerandish)](https://amerandish.com)** `[Commercial]` `[API]` — از باسابقه‌ترین سرویس‌های تجاری تایپ صوتی و تبدیل گفتار به متن با دقت بسیار بالا در محیط‌های پرسروصدا.
 * **[IoType (آی‌او تایپ)](https://www.iotype.com/api)** `[Freemium]` `[API]` — وب‌سرویس و API تایپ صوتی و تبدیل فایل‌های صوتی ضبط‌شده به متن ویرایش‌شده.
 
-### 4.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)
+### 5.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)
 
+* **[Chatterbox-TTS-Persian-Farsi](https://huggingface.co/Thomcles/Chatterbox-TTS-Persian-Farsi)** `[HuggingFace]` `[TTS]` — محبوب‌ترین و طبیعی‌ترین مدل تبدیل متن به صوت فارسی در هاگینگ‌فیس.
+* **[Pocket TTS Farsi (ONNX)](https://huggingface.co/Nimaone/pocket-tts-farsi-v2-onnx)** `[Open-Source]` `[Lightweight]` — سنتز گفتار بسیار سبک با فرمت ONNX با قابلیت اجرا روی دستگاه‌های موبایل و سرورهای کم‌مصرف.
 * **[persian_tts (nimaone)](https://github.com/nimaone/persian_tts)** `[Open-Source]` `[Offline]` — موتور سنتز صدای فارسی با قابلیت شبیه‌سازی و کلونینگ صدا (Voice Cloning) بدون نیاز به اینترنت بر روی پردازنده معمولی (CPU).
+* **[Mana Persian Piper](https://huggingface.co/MahtaFetrat/Mana-Persian-Piper)** `[Open-Source]` `[Piper]` — مدل بهینه‌سازی‌شده برای موتور صوت پایپر (Piper TTS) با تلفظ دقیق و طبیعی.
 * **[dcho Voice Engine](https://github.com/AliAkrami1375/dcho)** `[Open-Source]` `[Edge]` — پایپ‌لاین تولید گفتار طبیعی و فوق‌سریع برای گجت‌های الکترونیکی و سیستم‌های امبدد.
 * **[Gooya Bozorg (گویا بزرگ)](https://github.com/Reza2kn/gooya-bozorg-native)** `[Open-Source]` `[Desktop]` — نرم‌افزار دسکتاپ بومی کراس‌پلتفرم برای خواندن کتاب‌های صوتی و متن‌های طولانی به فارسی روان.
 
 ---
 
-## 5. 👁️ بینایی ماشین و سندکاوی (Vision, OCR & Document AI)
+## 6. 👁️ بینایی ماشین و سندکاوی (Vision, OCR & Document AI)
 
+* **[Qwen2-VL-Persian-Arabic-OCR](https://huggingface.co/mohajesmaeili/Qwen3-VL-2B-Persian-Arabic-Ocr-v1.0)** `[Vision-LLM]` — مدل بینایی زبان (VLM) ویژه خواندن و دیجیتالی کردن اسناد خطی، چاپی و فرمول‌های ریاضی فارسی.
 * **[Persian OCR Master](https://github.com/JENOVASir/persianAi-OCR-MASTER)** `[Open-Source]` — وب‌اپلیکیشن استخراج متن از تصاویر اسناد، کتاب‌ها و دست‌خط‌های فارسی با امکان استخراج فرمول‌های ریاضی.
 * **[Hezar Vision (هزار)](https://github.com/hezarai/hezar)** `[Open-Source]` — مدل‌های پیش‌آموزش‌دیده برای خواندن پلاک خودرو، اسکن متون فارسی و اسناد هویتی (کارت ملی و شناسنامه).
 * **[ایران OCR](https://www.iranocr.ir)** `[Commercial]` `[API]` — وب‌سرویس قدیمی و تخصصی تبدیل پی‌دی‌اف‌های تصویری و عکس‌های اداری به فایل متنی قابل جستجو.
 
 ---
 
-## 6. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)
+## 7. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)
 
-### 6.1. مدل‌های برداری (Embedding Models)
+### 7.1. مدل‌های برداری (Embedding Models)
 
+* **[Persian Embeddings (heydariAI)](https://huggingface.co/heydariAI/persian-embeddings)** `[HuggingFace]` `[Top-Embedding]` — از محبوب‌ترین مدل‌های برداری فارسی آموزش‌دیده روی پیکره‌های بزرگ معنایی با دقت بالا در تسک‌های شباهت متن.
 * **[BGE-M3 Multilingual](https://github.com/FlagOpen/FlagEmbedding)** `[Open-Source]` — یکی از دقیق‌ترین مدل‌های چندزبانه با فهم عمیق معنایی جملات پیچیده فارسی در هر دو روش متراکم (Dense) و کلمه‌کلیدی (Sparse).
-* **[Persian Sentence Transformers](https://huggingface.co/models?search=persian-embedding)** `[Open-Source]` — مدل‌های بهینه‌سازی‌شده برای خوشه‌بندی متون و جستجوی معنایی متون وب فارسی.
+* **[ParsBERT NLI](https://huggingface.co/parsi-ai-nlpclass/ParsBERT-nli-FarsTail-FarSick)** `[Open-Source]` — مدل استنتاج معنایی و ارزیابی تطابق اسناد فارسی.
 
-### 6.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی
+### 7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی
 
 * **[PersianRAG (TahaBakhtari)](https://github.com/TahaBakhtari/PersianRAG)** `[Open-Source]` — پایپ‌لاین آماده پرسش و پاسخ بر روی مستندات اداری و کتاب‌های فارسی با رابط کاربری کاربرپسند.
 * **[Bank Chatbot Legal RAG](https://github.com/Muhammad-davoudi/bank-chatbot)** `[Open-Source]` — پیاده‌سازی کاربردی سیستم پاسخگویی به مقررات بانکی و بخشنامه‌های دولتی با کنترل توهم مدل (Anti-hallucination).
@@ -179,7 +204,7 @@
 
 ---
 
-## 7. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)
+## 8. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)
 
 | ابزار | برچسب‌ها | زبان | ویژگی و ماموریت |
 | :--- | :---: | :---: | :--- |
@@ -191,16 +216,20 @@
 
 ---
 
-## 8. 🖥️ افزونه‌ها، ابزارهای مرورگر و رابط‌های کاربری (Extensions & RTL)
+## 9. 🖥️ افزونه‌ها، ابزارهای مرورگر و رابط‌های کاربری (Extensions & RTL)
 
+* **[Nimruz Desktop](https://github.com/xmannii/nimruz-desktop)** `[Open-Source]` `[Desktop UI]` — رابط کاربری گرافیکی و مدرن دسکتاپ برای چت با مدل‌های محلی و خارجی به زبان فارسی.
 * **[Persian AI RTL Assistant](https://github.com/tig-ndi/persian-ai-rtl-assistant)** `[Browser-Extension]` — اصلاح جهت نمایش (RTL) و فونت فارسی در صفحات ChatGPT، Claude، DeepSeek و Mistral.
+* **[Persian Text to PDF Converter](https://github.com/Ho3seinTork/Persian-Text-to-PDF-Converter)** `[Web-App]` — تبدیل خروجی‌های مارک‌داون LLMها به پی‌دی‌اف فارسی مرتب با حذف خودکار کاراکترهای اضافی Markdown.
 * **[Reply RTL Viewer](https://github.com/shahriyar3/reply-rtl-viewer)** `[Open-Source]` — نمایشگر مدرن و تک‌فایلی متون مارک‌داون هوش مصنوعی با حل مشکل تداخل کدهای انگلیسی و متون فارسی.
 
 ---
 
-## 9. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
+## 10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
 
-* **[Awesome-Persian-LLM](https://github.com/MohammadHeydari/Awesome-Persian-LLM)** `[Curated-List]` — فهرست مقالات دانشگاهی، سورس‌کدها و منابع مرتبط با مدل‌های زبانی فارسی.
+* **[Alpaca Persian](https://huggingface.co/datasets/sinarashidi/alpaca-persian)** `[Dataset]` — دیتاست ۵۲ هزارتایی آموزش دستور (Instruction Tuning) آلپاکا ترجمه و بهینه‌سازی‌شده برای فارسی.
+* **[Persian Voice v1 & Speech](https://huggingface.co/datasets/vhdm/persian-voice-v1)** `[Audio Dataset]` — دیتاست غنی نمونه‌های ضبط‌شده صوتی برای آموزش مدل‌های بازشناسی و سنتز گفتار.
+* **[Persian Wikipedia QA](https://huggingface.co/datasets/fibonacciai/Persian-Wikipedia-QA)** `[Dataset]` — مجموعه‌داده پرسش و پاسخ استخراج‌شده از ویکی‌پدیا فارسی جهت ترین مدل‌های RAG.
 * **[GPTInformal Speech Dataset](https://github.com/MahtaFetrat/GPTInformal-Persian-Speech-Dataset)** `[Dataset]` — بیش از ۶ ساعت دیتای صوتی مکالمات غیررسمی با متن منطبق مناسب ترینینگ مدل‌های صوتی.
 * **[MirasText & Hamshahri Corpus](https://github.com/mhbashari/awesome-persian-nlp-ir)** `[Corpus]` — پیکره‌های چند ده‌میلیونی از متون استاندارد، خبری و دانشنامه‌ای فارسی.
 
