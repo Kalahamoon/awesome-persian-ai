@@ -1,4 +1,4 @@
-# نسخه فارسی Awesome Persian AI Hub
+# Awesome Persian AI & MCP Hub
 
 <div dir="rtl" align="right">
 
@@ -9,22 +9,22 @@
 <br/>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Organization](https://img.shields.io/badge/Org-Kalahamoon-6366f1.svg?style=flat-square)](https://github.com/Kalahamoon)
+[![Organization](https://img.shields.io/badge/Organization-Kalahamoon-6366f1.svg?style=flat-square)](https://github.com/Kalahamoon)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-10b981.svg?style=flat-square)](CONTRIBUTING.md)
-[![Persian Typography](https://img.shields.io/badge/ZWNJ-Standard_Persian-0ea5e9.svg?style=flat-square)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b.svg?style=flat-square)](LICENSE)
+[![English Version](https://img.shields.io/badge/Language-English_README-0ea5e9.svg?style=flat-square)](README.md)
 
 <br/>
 
-**مرکز جامع، مهندسی‌شده و یکپارچه ابزارها، پروتکل MCP، مدل‌های زبانی، سرویس‌های ابری، ابزارهای عبور از تحریم توسعه‌دهندگان و زیرساخت‌های هوش مصنوعی برای زبان فارسی و ایران.**
+**مرجع جامع، مهندسی‌شده و متمرکز ابزارها، سرورهای پروتکل MCP، مدل‌های زبانی، سرویس‌های ابری و زیرساخت‌های تخصصی هوش مصنوعی برای زبان فارسی و اکوسیستم ایران.**
 
-[نسخه انگلیسی (English Version)](README.md) • [راهنمای مشارکت](CONTRIBUTING.md) • [گزارش خطا یا ثبت ابزار](https://github.com/Kalahamoon/awesome-persian-ai/issues)
+[English Version (نسخه انگلیسی)](README.md) • [راهنمای مشارکت](CONTRIBUTING.md) • [ثبت ابزار یا گزارش خطا](https://github.com/Kalahamoon/awesome-persian-ai/issues)
 
 </div>
 
 ---
 
-### 🇮🇷 درود و سپاس از پیشگامان هوش مصنوعی فارسی
+### 🦁 درود و سپاس از پیشگامان هوش مصنوعی فارسی
 
 > **پیام تقدیر و افتخار:**  
 > صمیمانه‌ترین درودها و تبریکات نثار تمامی دانشمندان، مهندسان نرم‌افزار، پژوهشگران هوش مصنوعی، فعالان جامعه متن‌باز و کارآفرینان ایرانی در سراسر کره زمین — از مراکز تحقیقاتی پیشرو در اروپا و آمریکای شمالی تا استارتاپ‌ها، شرکت‌های دانش‌بنیان و توسعه‌دهندگان مستقل در جای‌جای ایران عزیز — که با وجود پیچیده‌ترین شرایط تحریمی، موانع زیرساختی و نابرابری‌های دسترسی، هرگز متوقف نشدند و با پشتکار، ایثار علمی و خلاقیت ناب خود، جایگاه زبان، فرهنگ و هوش مصنوعی فارسی را در صدر تحولات جهانی پاس داشتند. این هاب تقدیم به تک‌تک شما همراهان سرافراز است. 🦁✨
@@ -36,7 +36,7 @@
 | شماره | عنوان بخش | خلاصه محتوا |
 | :---: | :--- | :--- |
 | **۰۱** | [🔌 سرورها و ابزارهای پروتکل MCP](#۱-سرورها-و-ابزارهای-پروتکل-mcp) | سرورهای بومی برای باسلام، دیجی‌کالا، دیوار، ترب، لیارا، کراولرمون، کسرا و بله |
-| **۰۲** | [☁️ پلتفرم‌های ابری و درگاه‌های API](#۲-پلتفرمهای-ابری-و-درگاههای-api) | درگاه‌های بدون تحریم، فروش توکنی و سرورهای GPU |
+| **۰۲** | [☁️ پلتفرم‌های ابری و درگاه‌های API](#۲-پلتفرمهای-ابری-و-درگاههای-api) | درگاه‌های بدون تحریم، فروش توکنی و سرورهای پردازش گرافیکی GPU |
 | **۰۳** | [🧠 مدل‌های زبانی و بنیادی فارسی](#۳-مدلهای-زبانی-و-بنیادی-فارسی) | مدل‌های متن‌باز پایه، توکابرٹ، وزن‌های زبانی و لیدربوردهای رسمی |
 | **۰۴** | [🤖 سیستم‌ها و فریم‌ورک‌های چندایجنتیک](#۴-سیستمها-و-فریمورکهای-چندایجنتیک) | عامل‌های مالی، تبدیل متن به SQL و منشی‌های صوتی تلفنی |
 | **۰۵** | [🛡️ امنیت مدل‌های زبانی، گاردریل و ایمنی پرامپت](#۵-امنیت-مدلهای-زبانی-گاردریل-و-ایمنی-پرامپت) | دیواره‌های آتش زبانی، آزمون نفوذ پرامپت و جلوگیری از جیل‌بریک |
@@ -46,9 +46,8 @@
 | **۰۹** | [📚 ابزارهای بازیابی اطلاعات و RAG بومی](#۹-ابزارهای-بازیابی-اطلاعات-و-rag-بومی) | مدل‌های برداری امبدینگ (Tooka-SBERT) و پایپ‌لاین‌های سازمانی اسناد |
 | **۱۰** | [🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان](#۱۰-کتابخانهها-و-ابزارهای-مهندسی-زبان) | نرمال‌سازها، واژه‌نماها، جعبه‌ابزارهای توکنایزیشن و رسم‌الخط |
 | **۱۱** | [🌐 ترجمه ماشینی و ترنسفر زبان](#۱۱-ترجمه-ماشینی-و-ترنسفر-زبان) | مدل‌های ترجمه عصبی دوطرفه و مترجم‌های فرمت کتاب الکترونیکی |
-| **۱۲** | [🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه](#۱۲-افزونهها-ابزارهای-مرورگر-و-محیطهای-توسعه) | پلاگین opencode-rtl، افزونه‌های VS Code، ترمینال‌های BiDi و چیدمان متن |
-| **۱۳** | [⚡ ابزارهای عبور از تحریم و ارتباطات توسعه‌دهندگان](#۱۳-ابزارهای-عبور-از-تحریم-و-ارتباطات-توسعهدهندگان) | شکن، ۴۰۳، الکترو، رادار، بگذر، تغییردهنده‌های هوشمند DNS و پروکسی‌های اختصاصی |
-| **۱۴** | [📊 دیتاست‌ها و منابع ارزیابی داده](#۱۴-دیتاستها-و-منابع-ارزیابی-داده) | پیکره‌های ۸۰ گیگابایتی آموزش اولیه، دیتاست‌های دستوری و صوتی |
+| **۱۲** | [🖥️ رابط‌های کاربری، ابزارهای ایجنت و ابزارهای RTL](#۱۲-رابطهای-کاربری-ابزارهای-ایجنت-و-ابزارهای-rtl) | پلاگین opencode-rtl، افزونه‌های VS Code، ترمینال‌های BiDi و چیدمان متن |
+| **۱۳** | [📊 دیتاست‌ها و منابع ارزیابی داده](#۱۳-دیتاستها-و-منابع-ارزیابی-داده) | پیکره‌های ۸۰ گیگابایتی آموزش اولیه، دیتاست‌های دستوری و صوتی |
 
 ---
 
@@ -62,7 +61,6 @@
 | ![Agent](https://img.shields.io/badge/Agent-amber?style=flat-square) | **عامل هوشمند:** سیستم دارای حلقه تصمیم‌گیری و اجرای وظایف چندمرحله‌ای |
 | ![Leaderboard](https://img.shields.io/badge/Leaderboard-pink?style=flat-square) | **لیدربورد و ارزیابی:** جداول رتبه‌بندی رقابتی و بنچ‌مارک‌های معتبر |
 | ![Security](https://img.shields.io/badge/Security-red?style=flat-square) | **امنیت و گاردریل:** ابزارهای آزمون نفوذ، ایمنی پرامپت و دیواره‌های آتش زبانی |
-| ![Connectivity](https://img.shields.io/badge/Connectivity-cyan?style=flat-square) | **دور زدن تحریم و خطای ۴۰۳:** سرویس‌های SmartDNS و راهکارهای باز کردن ابزارهای برنامه‌نویسی |
 | ![LegalTech](https://img.shields.io/badge/LegalTech-violet?style=flat-square) ![Healthcare](https://img.shields.io/badge/Healthcare-teal?style=flat-square) | **حوزه تخصصی:** مدل‌ها و سامانه‌های اختصاصی حقوقی، قضایی یا سلامت و پزشکی |
 | ![No-VPN](https://img.shields.io/badge/No--VPN-sky?style=flat-square) | **بدون تحریم‌شکن:** دسترسی مستقیم بدون نیاز به VPN از داخل ایران |
 | ![Iran-Access](https://img.shields.io/badge/Iran--Access-green?style=flat-square) | **اینترانت ملی:** پایداری تضمین‌شده در شرایط محدودیت اینترنت بین‌الملل |
@@ -89,12 +87,6 @@
 * **[Aira MCP Server](https://github.com/AiraChat/aira-mcp)** ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) — سرور MCP و رجیستری کانکتورهای شناختی هوش مصنوعی فارسی.
 * **[Hermes Agent Iran Gateway](https://github.com/hnkwing/hermes-agent-iran-gateway)** ![Agent](https://img.shields.io/badge/Agent-amber?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) — گیت‌وی متن‌باز اتصال ایجنت هرمس به پیام‌رسان‌های بومی بله و روبیکا.
 * **[Smart Home KNX MCP](https://github.com/SMousavi7/smart-home-knx-thingsboard)** ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![IoT](https://img.shields.io/badge/IoT-blue?style=flat-square) — کنترل سیستم خانه هوشمند با فرمان‌های زبان طبیعی فارسی از طریق ترکیب KNX و اولاما.
-* **[APIs-made-in-Iran Catalog](https://github.com/Hameds/APIs-made-in-Iran)** ![Tools](https://img.shields.io/badge/Tools-slate?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) — کاتالوگ جامع صدها وب‌سرویس عمومی و سازمانی در ایران.
-
-### ۱.۴. ابزارهای زمانی، تقویم و بازارهای مالی ایران
-* **[Jalali Date Engine](https://persian-calendar.ir/)** ![Free](https://img.shields.io/badge/Free-emerald?style=flat-square) — موتور دقیق تبدیل تقویم‌های شمسی، میلادی و قمری و استخراج تعطیلات رسمی ایران.
-* **[TGJU Live Market Feed](https://marketplace.tgju.org)** ![Freemium](https://img.shields.io/badge/Freemium-indigo?style=flat-square) — وب‌سرویس استخراج لحظه‌ای نرخ ارز، طلا، سکه و بورس برای ایجنت‌های مالی.
-* **[Nobitex Trading Agent Tool](https://apidocs.nobitex.ir/)** ![Freemium](https://img.shields.io/badge/Freemium-indigo?style=flat-square) — واسط برنامه‌نویسی بازار رمزارز نوبیتکس برای تحلیل عمق بازار و قیمت تتر.
 
 ---
 
@@ -110,7 +102,6 @@
 
 ### ۲.۲. زیرساخت‌های ابری پردازش هوش مصنوعی و GPU
 * **[ابر آروان (ArvanCloud AI / GPU IaaS)](https://arvancloud.ir)** ![Iran-Access](https://img.shields.io/badge/Iran--Access-green?style=flat-square) — سرورهای ابری مجهز به پردازنده‌های گرافیکی NVIDIA در شبکه ملی.
-* **[ابر دراک (Derak Cloud)](https://derak.cloud)** ![Cloud](https://img.shields.io/badge/Cloud-blue?style=flat-square) — خدمات ابری لبه و ذخیره‌سازی داده‌های برداری (Vector DBs).
 
 ---
 
@@ -234,7 +225,7 @@
 
 ---
 
-## ۱۲. افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه
+## ۱۲. رابط‌های کاربری، ابزارهای ایجنت و ابزارهای RTL
 * **[opencode-rtl](https://github.com/razavioo/opencode-rtl)** ![DevTool](https://img.shields.io/badge/OpenCode--Plugin-blue?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) — پلاگین جامع راست‌چین‌سازی رابط ترمینال opencode با محافظت کامل از بلوک‌های کد و خروجی‌های دستورات شل.
 * **[RTL Support for VS Code Agents](https://github.com/GuyRonnen/rtl-for-vs-code-agents)** ![VS-Code](https://img.shields.io/badge/VS--Code-blue?style=flat-square) — پشتیبانی رسمی از چیدمان راست‌به‌چپ (RTL) در ایجنت‌های کدنویسی VS Code و GitHub Copilot با حفظ بلوک‌های کد LTR.
 * **[Kivun Terminal (Claude Code RTL)](https://github.com/noambrand/kivun-terminal-wsl)** ![Terminal](https://img.shields.io/badge/Terminal-slate?style=flat-square) — ترمینال اصلاح خروجی دوجهته (BiDi) برای اجرای بی‌نقص Claude Code در متون فارسی.
@@ -247,22 +238,7 @@
 
 ---
 
-## ۱۳. ابزارهای عبور از تحریم و ارتباطات توسعه‌دهندگان
-
-ابزارهای حیاتی جامعه برنامه‌نویسان ایرانی برای دور زدن تحریم‌های یکجانبه علیه توسعه‌دهندگان (مانند خطای 403 پلتفرم‌های گوگل، داکر، انویدیا، هاگینگ‌فیس و مخازن کتابخانه‌ها):
-
-* **[شکن (Shecan)](https://shecan.ir)** ![Free](https://img.shields.io/badge/SmartDNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/403--Bypass-cyan?style=flat-square) — سامانه پیشگام تحریم‌شکن مبتنی بر DNS برای دسترسی مستقیم برنامه‌نویسان به سایت‌های تحریمی بدون افت سرعت.
-* **[۴۰۳ آنلاین (403.online)](https://403.online)** ![Free](https://img.shields.io/badge/Anti--Sanction-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/DevTools-cyan?style=flat-square) — سرویس تخصصی رفع تحریم برای مخازن کد، رجیستری‌های پکیج و سرویس‌های ابری خارجی.
-* **[الکترو (Electro TM)](https://elctrotm.org)** ![Free](https://img.shields.io/badge/SmartDNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Gaming--Dev-cyan?style=flat-square) — سامانه دی‌ان‌اس و پروکسی پرسرعت مناسب برای کلاینت‌ها، موتورهای بازی‌سازی و ابزارهای توسعه.
-* **[رادار بازی (Radar Game)](https://radar.game)** ![Free](https://img.shields.io/badge/DNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Low--Latency-cyan?style=flat-square) — سامانه کاهش تاخیر و رفع محدودیت‌های شبکه و محتوای CDN.
-* **[بگذر (Begzar)](https://begzar.ir)** ![Free](https://img.shields.io/badge/SmartDNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Unblocker-cyan?style=flat-square) — ارائه‌دهنده سرویس‌های دی‌ان‌اس ضدتحریم برای کامپیوترها و سرورها.
-* **[DNS Changer Desktop](https://github.com/DnsChanger/dnsChanger-desktop)** ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Cross--Platform-blue?style=flat-square) — نرم‌افزار متن‌باز کراس‌پلتفرم برای تغییر سریع DNS بین شکن، ۴۰۳، الکترو و کلودفلر.
-* **[Smart DNS IR Optimizer](https://github.com/erfnzdeh/smart-dns-ir)** ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Server--Tool-slate?style=flat-square) — بهینه‌ساز خودکار DNS برای سرورهای داخل ایران؛ بنچ‌مارک بیش از ۶۰ سرور و تنظیم کش محلی داکر.
-* **[HyperDNS](https://github.com/IzumiRain/HyperDNS)** ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Go--Gateway-cyan?style=flat-square) — گیت‌وی مدرن Go با پروکسی SNI برای دور زدن خطای ۴۰۳ تحریم‌های خارجی همراه با پنل وب.
-
----
-
-## ۱۴. دیتاست‌ها و منابع ارزیابی داده
+## ۱۳. دیتاست‌ها و منابع ارزیابی داده
 * **[PersianQA](https://github.com/sajjjadayobi/PersianQA)** ![QA](https://img.shields.io/badge/QA-violet?style=flat-square) — اولین دیتاست استاندارد پرسش و پاسخ زبان فارسی مبتنی بر ویکی‌پدیا.
 * **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** ![Audio](https://img.shields.io/badge/Audio-orange?style=flat-square) — بزرگ‌ترین دیتاست گفتار فارسی با بیش از ۱۱۴ ساعت صوت و متن متناظر.
 * **[Persian Raw Text (80GB)](https://github.com/persiannlp/persian-raw-text)** ![Corpus](https://img.shields.io/badge/Corpus-blue?style=flat-square) — حدود ۸۰ گیگابایت متن خام پالایش‌شده برای پیش‌آموزش مدل‌های زبانی.
