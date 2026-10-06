@@ -24,9 +24,16 @@
 
 ---
 
+### 🇮🇷 درود و سپاس از پیشگامان هوش مصنوعی فارسی
+
+> **پیام تقدیر:**  
+> صمیمانه‌ترین درودها و تبریکات نثار تمامی مهندسان، پژوهشگران، توسعه‌دهندگان متن‌باز و کارآفرینان ایرانی در سراسر گیتی — از دانشگاه‌ها و آزمایشگاه‌های پیشرو جهان تا تیم‌های مستقل و استارتاپ‌های پرتلاش داخل کشور — که با وجود تمامی محدودیت‌ها، تحریم‌ها و موانع زیرساختی، با همت و دانش والای خود چراغ زبان، فرهنگ و هوش مصنوعی فارسی را در خط مقدم فناوری جهان روشن و پرفروغ نگاه داشته‌اند. این هاب ثمره و بازتابی از کوشش‌های ماندگار شماست. 🦁✨
+
+---
+
 ## 🏷️ راهنمای برچسب‌ها و وضعیت‌ها (Badges & Legend)
 
-برای اینکه در یک نگاه نوع دسترسی، مدل هزینه و نوع ابزار مشخص باشد، از سیستم برچسب‌گذاری زیر استفاده شده است:
+برای تفکیک بصری و شفافیت فنی، از سیستم برچسب‌گذاری زیر در تمام جداول استفاده شده است:
 
 | برچسب | عنوان | توضیحات |
 | :---: | :--- | :--- |
@@ -64,8 +71,9 @@
   - [7.1. مدل‌های برداری (Embedding Models)](#71-مدلهای-برداری-embedding-models)
   - [7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#72-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
 - [8. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)](#8--کتابخانهها-و-ابزارهای-مهندسی-زبان-persian-nlp-toolkits)
-- [9. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)](#9--افزونهها-ابزارهای-مرورگر-و-محیطهای-توسعه-extensions--devtools)
-- [10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#10--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
+- [9. 🌐 ترجمه ماشینی و ترنسفر زبان (Neural Machine Translation)](#9--ترجمه-ماشینی-و-ترنسفر-زبان-neural-machine-translation)
+- [10. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)](#10--افزونهها-ابزارهای-مرورگر-و-محیطهای-توسعه-extensions--devtools)
+- [11. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#11--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
 
 ---
 
@@ -91,6 +99,7 @@
 | **Liara Cloud MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP بر روی مستندات و زیرساخت ابری لیارا؛ جستجوی هیبریدی فارسی/انگلیسی، بررسی لاگ بیلد و کانفیگ استقرار | Python / Local Corpus | [SalehB1/Lira-mcp](https://github.com/SalehB1/Lira-mcp) |
 | **Aira MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP و رجیستری کانکتورهای شناختی هوش مصنوعی فارسی | TypeScript | [AiraChat/aira-mcp](https://github.com/AiraChat/aira-mcp) |
 | **Hermes Agent Iran Gateway** | `[Agent]` `[Open-Source]` | گیت‌وی متن‌باز برای اتصال ایجنت‌های پیشرفته هرمس (Nous Hermes) به پلتفرم‌های بومی مانند بله و روبیکا | Python / LangGraph | [مخزن](https://github.com/hnkwing/hermes-agent-iran-gateway) |
+| **Smart Home KNX MCP** | `[MCP]` `[IoT]` | کنترل سیستم خانه هوشمند با فرمان‌های زبان طبیعی فارسی از طریق ترکیب KNX، تینگزبورد و مدل‌های محلی اولاما | Python / Ollama | [SMousavi7/smart-home](https://github.com/SMousavi7/smart-home-knx-thingsboard) |
 | **APIs-made-in-Iran Catalog** | `[Tools]` `[Open-Source]` | ایندکس دسته‌بندی‌شده صدها وب‌سرویس عمومی و سازمانی در ایران برای تغذیه و فراخوانی ایجنت‌ها | JSON / Spec | [مخزن](https://github.com/Hameds/APIs-made-in-Iran) |
 
 ### 1.3. ابزارهای زمانی، تقویم و بازارهای مالی ایران
@@ -133,7 +142,7 @@
 
 | نام مدل | برچسب‌ها | پایه معماری | حجم | ویژگی‌ها و کاربرد |
 | :--- | :---: | :---: | :---: | :--- |
-| **درنا (Dorna)** | `[Open-Source]` `[Weights]` | LLaMA / Mistral | 8B | بهینه‌سازی‌شده برای پاسخ‌گویی سلیس، مکالمات محاوره‌ای و متن‌های نامه‌نگاری اداری در ایران |
+| **درنا ۲ (Dorna 2)** | `[Open-Source]` `[Weights]` | LLaMA-3.1 | 8B | نسل دوم مدل پرچمدار درنا با درک عمیق از ساختار جملات و استدلال محاوره‌ای و اداری در فرمت GGUF |
 | **مرال (Maral-7B)** | `[Open-Source]` `[Weights]` | Mistral-7B | 7B | از معتبرترین مدل‌های پایه فارسی با درک عمیق از استعاره‌ها و ریزه‌کاری‌های زبان فارسی |
 | **PersianMind (دانشگاه تهران)** | `[Open-Source]` `[Weights]` | LLaMA-2 | 7B | مدل زبانی پژوهشی دانشگاه تهران برای درک مفاهیم علمی، ادبی و پرسش و پاسخ فارسی |
 | **سینا (Sina-LLM)** | `[Open-Source]` `[Weights]` | LLaMA-3 | 8B | آموزش‌دیده روی حجم وسیعی از متون فارسی برای ارتقای توانایی استدلال، کدنویسی و ترجمه روان |
@@ -173,8 +182,8 @@
 
 * **[wav2vec2-large-xlsr-53-persian](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-persian)** `[HuggingFace]` `[STT]` — پردانلودترین مدل تشخیص گفتار فارسی در هاگینگ‌فیس با نزدیک به یک میلیون بار دریافت.
 * **[Wav2Vec2 Persian v3 (m3hrdadfi)](https://huggingface.co/m3hrdadfi/wav2vec2-large-xlsr-persian-v3)** `[Open-Source]` — مدل بهینه‌شده wav2vec2 برای بازشناسی گفتار فارسی با نرخ خطای واژگانی بسیار پایین.
+* **[Whisper-Persian-v4 (nezamisafa)](https://huggingface.co/nezamisafa/whisper-persian-v4)** `[Open-Source]` `[Whisper]` — مدل بهینه‌شده ویسپر لارج ۳ برای زبان فارسی با دقت بسیار بالا در گفتار محاوره‌ای.
 * **[PersianScribe for Apple Silicon](https://github.com/duuuude/PersianScribe-for-Apple-Silicon)** `[Open-Source]` `[Offline]` — پیاده‌سازی آفلاین تبدیل گفتار فارسی به متن همراه با تفکیک گوینده (Diarization) و شتاب‌دهی سخت‌افزاری بر روی پردازنده‌های M1/M2/M3/M4 اپل.
-* **[OpenAI Whisper (Persian Fine-tuned)](https://github.com/devie-dev/persian-stt-models)** `[Open-Source]` — پیاده‌سازی‌های فاین‌تیون‌شده مدل Whisper برای شناسایی کلمات عامیانه، لهجه‌ها و اصطلاحات تخصصی فارسی.
 * **[Nemotron ASR Streaming Farsi](https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi)** `[Open-Source]` `[Streaming]` — تشخیص گفتار استریمینگ و بلادرنگ زبان فارسی مبتنی بر معماری نیموترون انویدیا.
 * **[فارس‌آوا (FarsAva / Amerandish)](https://amerandish.com)** `[Commercial]` `[API]` — از باسابقه‌ترین سرویس‌های تجاری تایپ صوتی و تبدیل گفتار به متن با دقت بسیار بالا در محیط‌های پرسروصدا.
 * **[IoType (آی‌او تایپ)](https://www.iotype.com/api)** `[Freemium]` `[API]` — وب‌سرویس و API تایپ صوتی و تبدیل فایل‌های صوتی ضبط‌شده به متن ویرایش‌شده.
@@ -194,6 +203,7 @@
 
 * **[Qwen2-VL-Persian-Arabic-OCR](https://huggingface.co/mohajesmaeili/Qwen3-VL-2B-Persian-Arabic-Ocr-v1.0)** `[Vision-LLM]` — مدل بینایی زبان (VLM) ویژه خواندن و دیجیتالی کردن اسناد خطی، چاپی و فرمول‌های ریاضی فارسی.
 * **[Persian OCR Master](https://github.com/JENOVASir/persianAi-OCR-MASTER)** `[Open-Source]` — وب‌اپلیکیشن استخراج متن از تصاویر اسناد، کتاب‌ها و دست‌خط‌های فارسی با امکان استخراج فرمول‌های ریاضی.
+* **[PDF-OCR-Math2LaTeX](https://github.com/Sadeghizad/pdf-ocr-fas-eng-math2latex)** `[Desktop]` `[LaTeX]` — استخراج متون دوزبانه فارسی و انگلیسی از کتاب‌ها با تبدیل هوشمند معادلات ریاضی به کدهای استاندارد لایتک.
 * **[Hezar Vision (هزار)](https://github.com/hezarai/hezar)** `[Open-Source]` — مدل‌های پیش‌آموزش‌دیده برای خواندن پلاک خودرو، اسکن متون فارسی و اسناد هویتی (کارت ملی و شناسنامه).
 * **[ایران OCR](https://www.iranocr.ir)** `[Commercial]` `[API]` — وب‌سرویس قدیمی و تخصصی تبدیل پی‌دی‌اف‌های تصویری و عکس‌های اداری به فایل متنی قابل جستجو.
 
@@ -230,7 +240,15 @@
 
 ---
 
-## 9. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)
+## 9. 🌐 ترجمه ماشینی و ترنسفر زبان (Neural Machine Translation)
+
+* **[mT5-ParsiNLU Opus Translation (FA-EN)](https://huggingface.co/persiannlp/mt5-small-parsinlu-opus-translation_fa_en)** `[HuggingFace]` `[NMT]` — مدل ترجمه عصبی پیشرفته دوطرفه فارسی به انگلیسی با بیش از ۵۰ هزار بار دانلود در هاگینگ‌فیس.
+* **[Persian-To-English LoRA Translator](https://github.com/Mahdi-Maaref/Persian-To-English-Translator)** `[Open-Source]` `[PEFT]` — مدل سبک ترجمه با تنظیم پارامتری (LoRA) با حفظ لحن معنایی برای دیپلوی در سرورهای با منابع محدود.
+* **[EPUB AI Translator](https://github.com/Retro-Zero/epub-ai-translator)** `[Web-App]` `[Translator]` — وب‌اپلیکیشن ترجمه هوشمند کتاب‌های الکترونیکی به فارسی سلیس با حفظ چیدمان راست‌چین و جدول‌ها.
+
+---
+
+## 10. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)
 
 * **[RTL Support for VS Code Agents](https://github.com/GuyRonnen/rtl-for-vs-code-agents)** `[VS-Code-Extension]` — پشتیبانی رسمی و حرفه‌ای از چیدمان راست‌به‌چپ (RTL) در ایجنت‌های کدنویسی VS Code مانند GitHub Copilot با حفظ ساختار بلوک‌های کد LTR.
 * **[Kivun Terminal (Claude Code RTL)](https://github.com/noambrand/kivun-terminal-wsl)** `[DevTool]` `[Terminal]` — ترمینال تصحیح‌کننده خروجی دوجهته (BiDi) برای اجرای بی‌نقص Claude Code و ایجنت‌های متنی به زبان فارسی بدون به هم ریختگی حروف.
@@ -242,10 +260,11 @@
 
 ---
 
-## 10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
+## 11. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
 
 * **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** `[Audio Dataset]` — بزرگ‌ترین دیتاست متن‌باز گفتار فارسی با بیش از ۱۱۴ ساعت صوت بازنویسی‌شده با ابزارهای جمع‌آوری داده.
 * **[Persian Raw Text (80GB)](https://github.com/persiannlp/persian-raw-text)** `[Corpus]` — حدود ۸۰ گیگابایت متن خام تمیزشده فارسی برای آموزش اولیه (Pre-training) مدل‌های زبانی بزرگ.
+* **[SentiPers Corpus](https://github.com/phosseini/SentiPers)** `[Research]` `[Sentiment]` — پیکره مرجع تحلیل احساسات در زبان فارسی منتشرشده در arXiv.
 * **[FarsInstruct](https://huggingface.co/datasets/ParsiAI/FarsInstruct)** `[Dataset]` — مجموعه‌داده بزرگ تنظیم دستورالعمل (Instruction Dataset) برای چت‌بات‌ها و دستیارهای هوشمند فارسی.
 * **[Alpaca Persian](https://huggingface.co/datasets/sinarashidi/alpaca-persian)** `[Dataset]` — دیتاست ۵۲ هزارتایی آموزش دستور (Instruction Tuning) آلپاکا ترجمه و بهینه‌سازی‌شده برای فارسی.
 * **[Persian Voice v1 & Speech](https://huggingface.co/datasets/vhdm/persian-voice-v1)** `[Audio Dataset]` — دیتاست غنی نمونه‌های ضبط‌شده صوتی برای آموزش مدل‌های بازشناسی و سنتز گفتار.
