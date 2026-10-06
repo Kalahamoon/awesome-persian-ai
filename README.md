@@ -34,6 +34,7 @@
 | `[Open-Source]` | **متن‌باز** | سورس‌کد و وزن‌های مدل به‌صورت رایگان و عمومی در گیت‌هاب یا هاگینگ‌فیس موجود است |
 | `[API-Gateway]` | **درگاه API** | سرویس ارائه‌دهنده توکن و کلید API سازگار با استاندارد OpenAI / Claude |
 | `[Agent]` | **عامل هوشمند** | ابزارها و سیستم‌های دارای چرخه تصمیم‌گیری و اجرای وظایف چندمرحله‌ای |
+| `[Benchmark]` | **ارزیابی و تست** | فریم‌ورک‌ها و آزمون‌های سنجش کارایی و امنیت مدل‌ها |
 | `[Free]` | **کاملاً رایگان** | استفاده بدون هزینه مالی و محدودیت پرداختی |
 | `[Freemium]` | **اعتبار اولیه / حجمی** | دارای بسته تست رایگان با امکان خرید بسته‌های مصرفی |
 | `[Commercial]` | **تجاری / سازمانی** | نیازمند اشتراک، خرید کلید تجاری یا قرارداد شرکتی |
@@ -137,6 +138,8 @@
 | **PersianMind (دانشگاه تهران)** | `[Open-Source]` `[Weights]` | LLaMA-2 | 7B | مدل زبانی پژوهشی دانشگاه تهران برای درک مفاهیم علمی، ادبی و پرسش و پاسخ فارسی |
 | **سینا (Sina-LLM)** | `[Open-Source]` `[Weights]` | LLaMA-3 | 8B | آموزش‌دیده روی حجم وسیعی از متون فارسی برای ارتقای توانایی استدلال، کدنویسی و ترجمه روان |
 | **AVA-Llama-3 & Mistral** | `[Open-Source]` `[Weights]` | LLaMA-3 / Mistral | 8B / 7B | سری مدل‌های آوا با فاین‌تیون باکیفیت و عملکرد روان در محاوره فارسی |
+| **ParsBERT** | `[Open-Source]` `[Transformers]` | BERT Base | ۱۱۰ میلیون | مدل مرجع و بنیادین ترانسفورمر زبان فارسی با بیش از ۱۶۰ هزار بار دانلود در هاگینگ‌فیس |
+| **ParsGPT** | `[Open-Source]` `[Weights]` | GPT-2 | چندگانه | مدل تولید متن زبان فارسی توسعه داده شده در هوشواره |
 | **Gemma-3-Persian** | `[Open-Source]` `[Weights]` | Google Gemma | 4B | فاین‌تیون دقیق بر روی نسل جدید مدل‌های سبک جما برای چت و ترجمه |
 | **آوا (Ava-LLM)** | `[Open-Source]` `[Local-CPU]` | Qwen-2.5 / Gemma | 2B / 7B | بسیار سبک، طراحی‌شده جهت استقرار لوکال روی لپ‌تاپ و سرورهای بدون کارت گرافیک با Ollama |
 | **مجموعه مدل‌های هزار (Hezar)** | `[Open-Source]` `[Transformers]` | BERT / RoBERTa / T5 | چندگانه | مدل‌های ویژه تسک‌های تخصصی: طبقه‌بندی احساسات، تشخیص نام اشخاص (NER) و خلاصه‌سازی متون |
@@ -218,9 +221,11 @@
 | :--- | :---: | :---: | :--- |
 | **[DadmaTools](https://github.com/Dadmatech/DadmaTools)** | `[Open-Source]` | Python | تولکیت مدرن پردازش زبان فارسی توسعه داده شده توسط دادماتک؛ شامل لماتایزر، تجزیه‌گر نحوی، برچسب‌زن ادوار سخن (POS) و خلاصه‌ساز |
 | **[Hezar (هزار)](https://github.com/hezarai/hezar)** | `[Open-Source]` | Python | فریم‌ورک استاندارد و فراگیر هوش مصنوعی فارسی با ساپورت ترانسفورمرها و تسک‌های چندوجهی |
-| **[Persian-Tools](https://github.com/persian-tools/persian-tools)** | `[Open-Source]` | TS / JS | جعبه‌ابزار فوق‌العاده کاربردی برای اعتبارسنجی کدملی، کارت بانکی، تبدیل عدد به حروف و فرمت تاریخ |
+| **[ParsiNLU](https://github.com/persiannlp/parsinlu)** | `[Open-Source]` | Python | مجموعه تسک‌های سطح بالای پردازش زبان فارسی شامل درک مطلب، شباهت متن و استنتاج معنایی |
+| **[Persian-Tools](https://github.com/persian-tools/persian-tools)** | `[Open-Source]` | TS / Python / Go / Rust | جامع‌ترین جعبه‌ابزار اعتبارسنجی کدملی، کارت بانکی، تبدیل عدد به حروف و تاریخ شمسی در چندین زبان |
 | **[Hazm (هضم)](https://github.com/roshan-research/hazm)** | `[Open-Source]` | Python | باسابقه‌ترین ابزار توکنایزیشن، ریشه‌یابی و پاک‌سازی متن برای ساخت پایپ‌لاین‌های یادگیری ماشین |
 | **[Parsivar](https://github.com/ICTRC/Parsivar)** | `[Open-Source]` | Python | مجموعه تخصصی پیش‌پردازش متن با تاکید بر دستور خط فرهنگستان زبان و ادب فارسی |
+| **[Persian-NER (Text-Mining)](https://github.com/Text-Mining/Persian-NER)** | `[Open-Source]` | Dataset / Tools | بزرگ‌ترین پیکره نشان‌گذاری‌شده شناسایی موجودیت‌های نامدار در زبان فارسی |
 | **[Persian AI Glossary](https://github.com/snrazavi/Persian-AI-and-Machine-Learning-Glossary)** | `[Docs]` | MD | واژه‌نامه تخصصی معادل‌های فارسی برای اصطلاحات هوش مصنوعی و یادگیری ژرف |
 
 ---
@@ -240,6 +245,8 @@
 ## 10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
 
 * **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** `[Audio Dataset]` — بزرگ‌ترین دیتاست متن‌باز گفتار فارسی با بیش از ۱۱۴ ساعت صوت بازنویسی‌شده با ابزارهای جمع‌آوری داده.
+* **[Persian Raw Text (80GB)](https://github.com/persiannlp/persian-raw-text)** `[Corpus]` — حدود ۸۰ گیگابایت متن خام تمیزشده فارسی برای آموزش اولیه (Pre-training) مدل‌های زبانی بزرگ.
+* **[FarsInstruct](https://huggingface.co/datasets/ParsiAI/FarsInstruct)** `[Dataset]` — مجموعه‌داده بزرگ تنظیم دستورالعمل (Instruction Dataset) برای چت‌بات‌ها و دستیارهای هوشمند فارسی.
 * **[Alpaca Persian](https://huggingface.co/datasets/sinarashidi/alpaca-persian)** `[Dataset]` — دیتاست ۵۲ هزارتایی آموزش دستور (Instruction Tuning) آلپاکا ترجمه و بهینه‌سازی‌شده برای فارسی.
 * **[Persian Voice v1 & Speech](https://huggingface.co/datasets/vhdm/persian-voice-v1)** `[Audio Dataset]` — دیتاست غنی نمونه‌های ضبط‌شده صوتی برای آموزش مدل‌های بازشناسی و سنتز گفتار.
 * **[Persian Wikipedia QA](https://huggingface.co/datasets/fibonacciai/Persian-Wikipedia-QA)** `[Dataset]` — مجموعه‌داده پرسش و پاسخ استخراج‌شده از ویکی‌پدیا فارسی جهت ترین مدل‌های RAG.
