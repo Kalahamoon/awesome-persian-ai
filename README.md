@@ -33,6 +33,7 @@
 | `[MCP]` | **پروتکل اتصال مدل** | سازگار با پروتکل Model Context Protocol و قابل فراخوانی مستقیم در ایجنت‌ها |
 | `[Open-Source]` | **متن‌باز** | سورس‌کد و وزن‌های مدل به‌صورت رایگان و عمومی در گیت‌هاب یا هاگینگ‌فیس موجود است |
 | `[API-Gateway]` | **درگاه API** | سرویس ارائه‌دهنده توکن و کلید API سازگار با استاندارد OpenAI / Claude |
+| `[Agent]` | **عامل هوشمند** | ابزارها و سیستم‌های دارای چرخه تصمیم‌گیری و اجرای وظایف چندمرحله‌ای |
 | `[Free]` | **کاملاً رایگان** | استفاده بدون هزینه مالی و محدودیت پرداختی |
 | `[Freemium]` | **اعتبار اولیه / حجمی** | دارای بسته تست رایگان با امکان خرید بسته‌های مصرفی |
 | `[Commercial]` | **تجاری / سازمانی** | نیازمند اشتراک، خرید کلید تجاری یا قرارداد شرکتی |
@@ -44,8 +45,8 @@
 ## 🧭 فهرست دسته‌بندی‌ها / Table of Contents
 
 - [1. 🔌 سرورها و ابزارهای پروتکل MCP (Model Context Protocol)](#1--سرورها-و-ابزارهای-پروتکل-mcp-model-context-protocol)
-  - [1.1. سامانه‌ها و پلتفرم‌های بومی ایران](#11-سامانه‌ها-و-پلتفرمهای-بومی-ایران)
-  - [1.2. فروشگاه‌ها و اکوسیستم‌های تجارت الکترونیک](#12-فروشگاهها-و-اکوسیستمهای-تجارت-الکترونیک)
+  - [1.1. پلتفرم‌های تجارت الکترونیک و آگهی ایران](#11-پلتفرمهای-تجارت-الکترونیک-و-آگهی-ایران)
+  - [1.2. سامانه‌های اتوماسیون، پیام‌رسان‌ها و زیرساخت](#12-سامانه‌های-اتوماسیون-پیامرسانها-و-زیرساخت)
   - [1.3. ابزارهای زمانی، تقویم و بازارهای مالی ایران](#13-ابزارهای-زمانی-تقویم-و-بازارهای-مالی-ایران)
 - [2. ☁️ پلتفرم‌های ابری و درگاه‌های API (Cloud & Gateways)](#2--پلتفرمهای-ابری-و-درگاههای-api-cloud--gateways)
   - [2.1. درگاه‌های تجمیعی و ارائه‌دهنده توکن بدون تحریم](#21-درگاههای-تجمیعی-و-ارائهدهنده-توکن-بدون-تحریم)
@@ -62,7 +63,7 @@
   - [7.1. مدل‌های برداری (Embedding Models)](#71-مدلهای-برداری-embedding-models)
   - [7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#72-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
 - [8. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)](#8--کتابخانهها-و-ابزارهای-مهندسی-زبان-persian-nlp-toolkits)
-- [9. 🖥️ افزونه‌ها، ابزارهای مرورگر و رابط‌های کاربری (Extensions & RTL)](#9--افزونهها-ابزارهای-مرورگر-و-رابطهای-کاربری-extensions--rtl)
+- [9. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)](#9--افزونهها-ابزارهای-مرورگر-و-محیطهای-توسعه-extensions--devtools)
 - [10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#10--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
 
 ---
@@ -71,22 +72,25 @@
 
 پروتکل **MCP (Model Context Protocol)** استاندارد انقلابی شرکت آنتروپیک است که به دستیارهای هوش مصنوعی و مدل‌های زبانی (مثل Claude Desktop، Cursor، VS Code، OpenCode، Windsurf و Hermes) اجازه می‌دهد مستقیماً با پایگاه‌های داده و ابزارهای واقعی ارتباط برقرار کرده و دست به اقدام بزنند.
 
-### 1.1. سامانه‌ها و پلتفرم‌های بومی ایران
+### 1.1. پلتفرم‌های تجارت الکترونیک و آگهی ایران
+
+| عنوان ابزار / سرور | برچسب‌ها | توضیحات عملکردی | پشته فنی | مستندات / مخزن |
+| :--- | :---: | :--- | :---: | :---: |
+| **Basalam MCP Server** | `[MCP]` `[Production]` | سرور رسمی MCP بازار اجتماعی باسلام؛ مدیریت محصولات، غرفه‌ها، پیگیری سفارش‌ها و جستجو از طریق دستیار هوش مصنوعی در آدرس `mcp.basalam.com/mcp` | HTTP Transport / OAuth | [مستندات باسلام](https://developers.basalam.com/docs/mcp) |
+| **Digikala MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP مستقل دیجی‌کالا با ۱۶ ابزار اختصاصی؛ جستجوی کالا، مقایسه قیمت، استخراج نظرات خریداران و مشخصات فنی | Cloudflare Workers / TS | [mmdju/digikala-mcp](https://github.com/mmdju/digikala-mcp) |
+| **Divar MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP جستجو، واکشی و تحلیل آگهی‌های پلتفرم دیوار (املاک، خودرو، کالا) برای ایجنت‌های هوشمند | Cloudflare Workers / TS | [mmdju/divar-mcp](https://github.com/mmdju/divar-mcp) |
+| **Torob MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP موتور مقایسه قیمت ترب شامل ۱۴ ابزار؛ بررسی نوسان قیمت، موجودی فروشگاه‌ها و کشف تخفیف‌ها | Cloudflare Workers / TS | [mmdju/torob-mcp](https://github.com/mmdju/torob-mcp) |
+
+### 1.2. سامانه‌های اتوماسیون، پیام‌رسان‌ها و زیرساخت
 
 | عنوان ابزار / سرور | برچسب‌ها | توضیحات عملکردی | پشته فنی | دسترسی |
 | :--- | :---: | :--- | :---: | :---: |
 | **Kasra MCP Server** | `[MCP]` `[Internal]` | ارتباط دستیار هوش مصنوعی با سامانه اتوماسیون تردد و پرسنلی کسرا؛ استخراج مانده مرخصی، وضعیت حضور و غیاب، و ثبت خودکار درخواست مجوز و ماموریت | Python / FastMCP | بومی |
 | **Bale Messenger MCP** | `[MCP]` `[Open-Source]` | اتصال ایجنت‌های هوش مصنوعی به پیام‌رسان بله؛ خواندن تاریخچه پیام‌ها، سرچ در کانال‌ها و ارسال پیام تاییدمحور | Python / Stdio | بومی |
+| **Liara Cloud MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP بر روی مستندات و زیرساخت ابری لیارا؛ جستجوی هیبریدی فارسی/انگلیسی، بررسی لاگ بیلد و کانفیگ استقرار | Python / Local Corpus | [SalehB1/Lira-mcp](https://github.com/SalehB1/Lira-mcp) |
+| **Aira MCP Server** | `[MCP]` `[Open-Source]` | سرور MCP و رجیستری کانکتورهای شناختی هوش مصنوعی فارسی | TypeScript | [AiraChat/aira-mcp](https://github.com/AiraChat/aira-mcp) |
 | **Hermes Agent Iran Gateway** | `[Agent]` `[Open-Source]` | گیت‌وی متن‌باز برای اتصال ایجنت‌های پیشرفته هرمس (Nous Hermes) به پلتفرم‌های بومی مانند بله و روبیکا | Python / LangGraph | [مخزن](https://github.com/hnkwing/hermes-agent-iran-gateway) |
 | **APIs-made-in-Iran Catalog** | `[Tools]` `[Open-Source]` | ایندکس دسته‌بندی‌شده صدها وب‌سرویس عمومی و سازمانی در ایران برای تغذیه و فراخوانی ایجنت‌ها | JSON / Spec | [مخزن](https://github.com/Hameds/APIs-made-in-Iran) |
-
-### 1.2. فروشگاه‌ها و اکوسیستم‌های تجارت الکترونیک
-
-| عنوان ابزار / سرور | برچسب‌ها | توضیحات عملکردی | پشته فنی | مستندات |
-| :--- | :---: | :--- | :---: | :---: |
-| **Basalam MCP Server** | `[MCP]` `[Production]` | سرور رسمی MCP بازار اجتماعی باسلام؛ امکان مدیریت محصولات، غرفه‌ها، پیگیری سفارش‌ها و جستجو از طریق دستیار هوش مصنوعی در آدرس `mcp.basalam.com/mcp` | HTTP Transport / OAuth | [مستندات باسلام](https://developers.basalam.com/docs/mcp) |
-| **Digikala Search & Specs** | `[Tools]` `[Scraper]` | ابزار واکشی هوشمند مشخصات فنی، نظرات خریداران و رصد نوسان قیمت محصولات در دیجی‌کالا برای ایجنت‌های خرید | Python / REST | [مستندات](https://gist.github.com/sh-sh-dev/542724a6ac72dc04623ecffaa4989620) |
-| **Torob Price Engine Tool** | `[Tools]` `[Scraper]` | موتور مقایسه قیمت کالا میان صدها فروشگاه اینترنتی ایرانی جهت تصمیم‌گیری در پایپ‌لاین‌های خرید خودکار | Python | عمومی |
 
 ### 1.3. ابزارهای زمانی، تقویم و بازارهای مالی ایران
 
@@ -152,8 +156,11 @@
 ابزارها و چارچوب‌های طراحی عامل‌های هوشمند خودمختار با پشتیبانی از ابزارهای فارسی:
 
 * **[LangGraph Multi-Agent Persian](https://github.com/SaharZarbafi/langgraph-multi-agent-persian)** `[Open-Source]` `[Multi-Agent]` — سیستم پروداکشن ایجنتیک با معماری Actor-Critic و مسیریابی هوشمند میان مدل‌های مختلف برای انجام تسک‌های مرکب.
+* **[Local SQL Agent (Persian)](https://github.com/alisadeghiaghili/local-sql-agent)** `[Open-Source]` `[Text-to-SQL]` — تبدیل گفتار و متن طبیعی فارسی به کوئری‌های امن SQL برای انباره داده‌های سازمانی با اعتبارسنجی AST و تفکیک دسترسی ستون‌ها.
 * **[Doctor Agent](https://github.com/SirBNL/doctor-agent)** `[Open-Source]` `[Agent]` — ایجنت هوشمند نوبت‌دهی پزشکی به زبان فارسی با قابلیت فراخوانی ابزار (Tool Calling) و اجرای کاملاً محلی با Ollama.
 * **[Phone Agent (منشی تلفنی هوشمند)](https://github.com/sepehr071/phone-agent)** `[Open-Source]` `[Voice Agent]` — پاسخ‌گویی خودکار تلفنی بر بستر استریسک (Asterisk)، تبدیل گفتار به متن، تصمیم‌گیری زبانی و پاسخ صوتی بلادرنگ به فارسی روان.
+* **[Micky Voice Assistant](https://github.com/xmannii/micky)** `[Open-Source]` `[Agent]` — دستیار صوتی ایجنتیک اولویت‌دار برای زبان فارسی با معماری ماژولار و اکشن‌های سیستمی.
+* **[Moujez Summarizer Agent](https://github.com/kharazi/moujez)** `[Open-Source]` `[Agent]` — ایجنت تلخیص، خلاصه‌سازی و عصاره‌کشی ساختاریافته از متون و گزارش‌های بلند فارسی.
 
 ---
 
@@ -163,6 +170,7 @@
 
 * **[wav2vec2-large-xlsr-53-persian](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-persian)** `[HuggingFace]` `[STT]` — پردانلودترین مدل تشخیص گفتار فارسی در هاگینگ‌فیس با نزدیک به یک میلیون بار دریافت.
 * **[Wav2Vec2 Persian v3 (m3hrdadfi)](https://huggingface.co/m3hrdadfi/wav2vec2-large-xlsr-persian-v3)** `[Open-Source]` — مدل بهینه‌شده wav2vec2 برای بازشناسی گفتار فارسی با نرخ خطای واژگانی بسیار پایین.
+* **[PersianScribe for Apple Silicon](https://github.com/duuuude/PersianScribe-for-Apple-Silicon)** `[Open-Source]` `[Offline]` — پیاده‌سازی آفلاین تبدیل گفتار فارسی به متن همراه با تفکیک گوینده (Diarization) و شتاب‌دهی سخت‌افزاری بر روی پردازنده‌های M1/M2/M3/M4 اپل.
 * **[OpenAI Whisper (Persian Fine-tuned)](https://github.com/devie-dev/persian-stt-models)** `[Open-Source]` — پیاده‌سازی‌های فاین‌تیون‌شده مدل Whisper برای شناسایی کلمات عامیانه، لهجه‌ها و اصطلاحات تخصصی فارسی.
 * **[Nemotron ASR Streaming Farsi](https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi)** `[Open-Source]` `[Streaming]` — تشخیص گفتار استریمینگ و بلادرنگ زبان فارسی مبتنی بر معماری نیموترون انویدیا.
 * **[فارس‌آوا (FarsAva / Amerandish)](https://amerandish.com)** `[Commercial]` `[API]` — از باسابقه‌ترین سرویس‌های تجاری تایپ صوتی و تبدیل گفتار به متن با دقت بسیار بالا در محیط‌های پرسروصدا.
@@ -208,6 +216,7 @@
 
 | ابزار | برچسب‌ها | زبان | ویژگی و ماموریت |
 | :--- | :---: | :---: | :--- |
+| **[DadmaTools](https://github.com/Dadmatech/DadmaTools)** | `[Open-Source]` | Python | تولکیت مدرن پردازش زبان فارسی توسعه داده شده توسط دادماتک؛ شامل لماتایزر، تجزیه‌گر نحوی، برچسب‌زن ادوار سخن (POS) و خلاصه‌ساز |
 | **[Hezar (هزار)](https://github.com/hezarai/hezar)** | `[Open-Source]` | Python | فریم‌ورک استاندارد و فراگیر هوش مصنوعی فارسی با ساپورت ترانسفورمرها و تسک‌های چندوجهی |
 | **[Persian-Tools](https://github.com/persian-tools/persian-tools)** | `[Open-Source]` | TS / JS | جعبه‌ابزار فوق‌العاده کاربردی برای اعتبارسنجی کدملی، کارت بانکی، تبدیل عدد به حروف و فرمت تاریخ |
 | **[Hazm (هضم)](https://github.com/roshan-research/hazm)** | `[Open-Source]` | Python | باسابقه‌ترین ابزار توکنایزیشن، ریشه‌یابی و پاک‌سازی متن برای ساخت پایپ‌لاین‌های یادگیری ماشین |
@@ -216,9 +225,12 @@
 
 ---
 
-## 9. 🖥️ افزونه‌ها، ابزارهای مرورگر و رابط‌های کاربری (Extensions & RTL)
+## 9. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)
 
+* **[RTL Support for VS Code Agents](https://github.com/GuyRonnen/rtl-for-vs-code-agents)** `[VS-Code-Extension]` — پشتیبانی رسمی و حرفه‌ای از چیدمان راست‌به‌چپ (RTL) در ایجنت‌های کدنویسی VS Code مانند GitHub Copilot با حفظ ساختار بلوک‌های کد LTR.
+* **[Kivun Terminal (Claude Code RTL)](https://github.com/noambrand/kivun-terminal-wsl)** `[DevTool]` `[Terminal]` — ترمینال تصحیح‌کننده خروجی دوجهته (BiDi) برای اجرای بی‌نقص Claude Code و ایجنت‌های متنی به زبان فارسی بدون به هم ریختگی حروف.
 * **[Nimruz Desktop](https://github.com/xmannii/nimruz-desktop)** `[Open-Source]` `[Desktop UI]` — رابط کاربری گرافیکی و مدرن دسکتاپ برای چت با مدل‌های محلی و خارجی به زبان فارسی.
+* **[Hermes Agent Farsi](https://github.com/m4tinbeigi-official/hermes-agent-farsi)** `[UI-Mod]` — فارسی‌سازی کامل داشبورد، راست‌چین‌سازی (RTL) و فونت وزیرمتن برای فریم‌ورک محبوب Hermes Agent.
 * **[Persian AI RTL Assistant](https://github.com/tig-ndi/persian-ai-rtl-assistant)** `[Browser-Extension]` — اصلاح جهت نمایش (RTL) و فونت فارسی در صفحات ChatGPT، Claude، DeepSeek و Mistral.
 * **[Persian Text to PDF Converter](https://github.com/Ho3seinTork/Persian-Text-to-PDF-Converter)** `[Web-App]` — تبدیل خروجی‌های مارک‌داون LLMها به پی‌دی‌اف فارسی مرتب با حذف خودکار کاراکترهای اضافی Markdown.
 * **[Reply RTL Viewer](https://github.com/shahriyar3/reply-rtl-viewer)** `[Open-Source]` — نمایشگر مدرن و تک‌فایلی متون مارک‌داون هوش مصنوعی با حل مشکل تداخل کدهای انگلیسی و متون فارسی.
@@ -227,6 +239,7 @@
 
 ## 10. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
 
+* **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** `[Audio Dataset]` — بزرگ‌ترین دیتاست متن‌باز گفتار فارسی با بیش از ۱۱۴ ساعت صوت بازنویسی‌شده با ابزارهای جمع‌آوری داده.
 * **[Alpaca Persian](https://huggingface.co/datasets/sinarashidi/alpaca-persian)** `[Dataset]` — دیتاست ۵۲ هزارتایی آموزش دستور (Instruction Tuning) آلپاکا ترجمه و بهینه‌سازی‌شده برای فارسی.
 * **[Persian Voice v1 & Speech](https://huggingface.co/datasets/vhdm/persian-voice-v1)** `[Audio Dataset]` — دیتاست غنی نمونه‌های ضبط‌شده صوتی برای آموزش مدل‌های بازشناسی و سنتز گفتار.
 * **[Persian Wikipedia QA](https://huggingface.co/datasets/fibonacciai/Persian-Wikipedia-QA)** `[Dataset]` — مجموعه‌داده پرسش و پاسخ استخراج‌شده از ویکی‌پدیا فارسی جهت ترین مدل‌های RAG.
