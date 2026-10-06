@@ -14,7 +14,7 @@
 
 <br/>
 
-**The curated engineering directory of Model Context Protocol (MCP) servers, LLMs, Agentic tools, cloud gateways, and AI infrastructure for Persian (Farsi) and the Iranian developer ecosystem.**
+**The curated engineering directory of Model Context Protocol (MCP) servers, LLMs, Agentic tools, cloud gateways, anti-sanction developer utilities, and AI infrastructure for Persian (Farsi) and the Iranian developer ecosystem.**
 
 [Persian Version (نسخه کامل فارسی)](README.fa.md) • [Contribution Guidelines](CONTRIBUTING.md) • [Submit Tool / Issue](https://github.com/Kalahamoon/awesome-persian-ai/issues)
 
@@ -33,10 +33,10 @@
 
 | # | Section | Overview |
 | :---: | :--- | :--- |
-| **01** | [🔌 Model Context Protocol (MCP) Servers](#1--model-context-protocol-mcp-servers) | MCP servers for Iranian marketplaces, messengers & enterprise ERPs |
+| **01** | [🔌 Model Context Protocol (MCP) Servers](#1--model-context-protocol-mcp-servers) | Native MCP servers for marketplaces, cloud deployers, crawlers, messengers & ERPs |
 | **02** | [☁️ Cloud Platforms & API Gateways](#2-️-cloud-platforms--api-gateways) | Low-latency inference gateways, pay-as-you-go tokens & GPU clouds |
-| **03** | [🧠 Persian LLMs & Foundation Models](#3--persian-llms--foundation-models) | Open-weight foundation models, GGUFs & official benchmarks |
-| **04** | [🤖 Agentic Frameworks & Production Agents](#4--agentic-frameworks--production-agents) | Multi-agent swarms, Text-to-SQL & autonomous telephone agents |
+| **03** | [🧠 Persian LLMs & Foundation Models](#3--persian-llms--foundation-models) | Open-weight foundation models, GGUFs, BERT/RoBERTa backbones & benchmarks |
+| **04** | [🤖 Agentic Frameworks & Production Agents](#4--agentic-frameworks--production-agents) | Multi-agent swarms, Text-to-SQL, financial trading agents & voice PBX agents |
 | **05** | [🛡️ LLM Security & Guardrails](#5-️-llm-security-guardrails--jailbreak-defense) | Prompt injection defense, BiDi integrity & jailbreak research |
 | **06** | [⚖️🩺 Specialized AI: Legal & Healthcare](#6-️-domain-specific-ai-legaltech--healthcare) | AI legal operating systems, medical LLMs & clinical simulators |
 | **07** | [🎙️ Speech Processing (STT & TTS)](#7-️-speech-processing-stt--tts) | Speech-to-text models, voice cloning & offline speech synthesis |
@@ -44,8 +44,9 @@
 | **09** | [📚 Persian Embeddings & Enterprise RAG](#9--persian-embeddings--enterprise-rag) | Vector embedding models & enterprise document RAG pipelines |
 | **10** | [🛠️ NLP Toolkits & Normalizers](#10-️-persian-nlp-toolkits--normalizers) | Industrial text cleaners, tokenizers & morphology toolkits |
 | **11** | [🌐 Neural Machine Translation (NMT)](#11--neural-machine-translation-nmt) | Bidirectional neural translation models & e-book translators |
-| **12** | [🖥️ Developer Tools & RTL Terminals](#12-️-developer-tools-rtl-fixers--terminals) | VS Code agent RTL fixers, BiDi terminals & desktop clients |
-| **13** | [📊 Large-Scale Datasets & Corpora](#13--large-scale-datasets--corpora) | 80GB pre-training corpora, instruction datasets & speech corpora |
+| **12** | [🖥️ Developer Tools & RTL Terminals](#12-️-developer-tools-rtl-fixers--terminals) | VS Code agent RTL fixers, opencode plugins, BiDi terminals & desktop clients |
+| **13** | [⚡ Anti-Sanction & Developer Connectivity](#13-️-anti-sanction-bypass--developer-connectivity) | SmartDNS, IDE unblockers, 403 bypass tools & local caching resolvers |
+| **14** | [📊 Large-Scale Datasets & Corpora](#14--large-scale-datasets--corpora) | 80GB pre-training corpora, instruction datasets & speech corpora |
 
 ---
 
@@ -59,6 +60,7 @@
 | ![Agent](https://img.shields.io/badge/Agent-amber?style=flat-square) | **Autonomous Agent:** Executes multi-step tool-calling loops autonomously |
 | ![Leaderboard](https://img.shields.io/badge/Leaderboard-pink?style=flat-square) | **Leaderboard & Eval:** Public competitive benchmarking suite |
 | ![Security](https://img.shields.io/badge/Security-red?style=flat-square) | **Security & Guardrail:** Adversarial testing, prompt protection & integrity layer |
+| ![Connectivity](https://img.shields.io/badge/Connectivity-cyan?style=flat-square) | **Anti-Sanction & 403 Bypass:** Direct access tools for developer environments & AI IDEs |
 | ![LegalTech](https://img.shields.io/badge/LegalTech-violet?style=flat-square) ![Healthcare](https://img.shields.io/badge/Healthcare-teal?style=flat-square) | **Domain Specific:** Tailored architectures for law, jurisprudence or medicine |
 | ![No-VPN](https://img.shields.io/badge/No--VPN-sky?style=flat-square) | **Direct Connection:** Fully accessible without VPN from inside Iran |
 | ![Iran-Access](https://img.shields.io/badge/Iran--Access-green?style=flat-square) | **Intranet Resilient:** Guaranteed availability during national network isolations |
@@ -79,19 +81,26 @@ Anthropic's open **Model Context Protocol (MCP)** standard enables AI models (Cl
 | **[Divar MCP Server](https://github.com/mmdju/divar-mcp)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Divar marketplace MCP server providing deep search, listing extractions, and real-estate/vehicle analytics | Cloudflare Workers / TS | [mmdju/divar-mcp](https://github.com/mmdju/divar-mcp) |
 | **[Torob MCP Server](https://github.com/mmdju/torob-mcp)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Torob price comparison MCP server featuring 14 tools to track multi-vendor deals, merchant inventory, and price drops | Cloudflare Workers / TS | [mmdju/torob-mcp](https://github.com/mmdju/torob-mcp) |
 
-### 1.2. Enterprise Automation & Messengers
+### 1.2. Cloud Infrastructure & Web Crawling
+
+| Server / Tool | Badges | Description | Stack | Documentation / Repo |
+| :--- | :---: | :--- | :---: | :---: |
+| **[Liara Cloud MCP Server](https://github.com/razavioo/liara-mcp)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Full infrastructure management MCP server for Liara cloud: deploy apps, manage databases, view DNS records, and control disks with natural language | TypeScript / Node.js | [GitHub](https://github.com/razavioo/liara-mcp) |
+| **[Crawlemoon MCP Server](https://github.com/razavioo/crawlemoon)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Advanced web crawling & scraping platform designed for the AI agent era; extracts clean markdown, structures tables, and exposes deep inspection tools | Python / FastMCP | [GitHub](https://github.com/razavioo/crawlemoon) |
+| **[Liara Docs MCP](https://github.com/SalehB1/Lira-mcp)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Offline hybrid EN/FA retrieval over Liara cloud documentation, build-log diagnosis, and deployment configs | Python / Local Corpus | [SalehB1/Lira-mcp](https://github.com/SalehB1/Lira-mcp) |
+
+### 1.3. Enterprise Automation & Messengers
 
 | Server / Tool | Badges | Description | Stack | Access |
 | :--- | :---: | :--- | :---: | :---: |
-| **Kasra MCP Server** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Internal](https://img.shields.io/badge/Internal-slate?style=flat-square) | Full integration with Kasra Enterprise ERP for personnel attendance, cardex balance tracking, and automated leave requests | Python / FastMCP | Local |
-| **Bale Messenger MCP** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Connects LLM agents to Bale Messenger; reads thread history, searches channels, and sends confirmed messages | Python / Stdio | Local |
-| **[Liara Cloud MCP Server](https://github.com/SalehB1/Lira-mcp)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Hybrid EN/FA retrieval over Liara cloud docs, deployment diagnostics, and build-log inspection with zero external API key needed | Python / Local Corpus | [SalehB1/Lira-mcp](https://github.com/SalehB1/Lira-mcp) |
+| **[Kasra MCP Server](https://github.com/razavioo/kasra-mcp-server)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Full integration with Kasra Enterprise ERP for personnel attendance, cardex balance tracking, shift punches, and automated leave/mission requests | Python / FastMCP | [GitHub](https://github.com/razavioo/kasra-mcp-server) |
+| **[Userbot Bale MCP](https://github.com/razavioo/userbot-bale)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Comprehensive Bale Messenger client core & MCP server; search messages, inspect dialogs, and safely execute approved messaging | Python / Stdio | [GitHub](https://github.com/razavioo/userbot-bale) |
 | **[Aira Cognitive MCP](https://github.com/AiraChat/aira-mcp)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | MCP connector registry for Persian cognitive intelligence workflows | TypeScript | [AiraChat/aira-mcp](https://github.com/AiraChat/aira-mcp) |
 | **[Hermes Agent Iran Gateway](https://github.com/hnkwing/hermes-agent-iran-gateway)** | ![Agent](https://img.shields.io/badge/Agent-amber?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Production gateway connecting Nous Hermes agents to native messengers like Bale and Rubika | Python / LangGraph | [GitHub](https://github.com/hnkwing/hermes-agent-iran-gateway) |
 | **[Smart Home KNX MCP](https://github.com/SMousavi7/smart-home-knx-thingsboard)** | ![MCP](https://img.shields.io/badge/MCP-purple?style=flat-square) ![IoT](https://img.shields.io/badge/IoT-blue?style=flat-square) | Natural language smart home management in Persian via KNX, ThingsBoard, and local Ollama LLMs | Python / Ollama | [SMousavi7/smart-home](https://github.com/SMousavi7/smart-home-knx-thingsboard) |
 | **[APIs-made-in-Iran Catalog](https://github.com/Hameds/APIs-made-in-Iran)** | ![Tools](https://img.shields.io/badge/Tools-slate?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) | Curated catalog of hundreds of Iranian public and enterprise web APIs ready for agent tool-calling schemas | JSON / Spec | [Hameds/APIs-made-in-Iran](https://github.com/Hameds/APIs-made-in-Iran) |
 
-### 1.3. Local Time, Calendars & Financial Market Feeds
+### 1.4. Local Time, Calendars & Financial Market Feeds
 
 | Server / Tool | Badges | Description | Stack | Link |
 | :--- | :---: | :--- | :---: | :---: |
@@ -133,6 +142,7 @@ Foundation models specifically pre-trained or instruction-tuned for Persian ling
 | :--- | :---: | :---: | :---: | :--- |
 | **Dorna 2** | ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Weights](https://img.shields.io/badge/Weights-purple?style=flat-square) | LLaMA-3.1 | 8B | Flagship instruction-tuned Persian model by Part AI; native GGUF support for conversational and formal Persian |
 | **Maral-7B** | ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Weights](https://img.shields.io/badge/Weights-purple?style=flat-square) | Mistral-7B | 7B | Landmark Persian open LLM based on Mistral; renowned for Persian idiomatic reasoning |
+| **TookaBERT** | ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Transformers](https://img.shields.io/badge/Transformers-yellow?style=flat-square) | BERT Base / Large | Multi | Industrial-strength Persian representation model by Part AI trained on billions of tokens |
 | **PersianMind** | ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Weights](https://img.shields.io/badge/Weights-purple?style=flat-square) | LLaMA-2 | 7B | Academic research foundation model by University of Tehran for Persian scientific and literary QA |
 | **Sina-LLM** | ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Weights](https://img.shields.io/badge/Weights-purple?style=flat-square) | LLaMA-3 | 8B | Instruction-tuned on extensive Persian corpora for complex reasoning and fluent translation |
 | **AVA Series** | ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Weights](https://img.shields.io/badge/Weights-purple?style=flat-square) | LLaMA-3 / Mistral | 8B / 7B | AVA model family optimized for conversational speed and polite Persian phrasing |
@@ -158,6 +168,7 @@ Foundation models specifically pre-trained or instruction-tuned for Persian ling
 Autonomous agent architectures and tool-orchestration engines built for Persian tasks:
 
 * **[LangGraph Multi-Agent Persian](https://github.com/SaharZarbafi/langgraph-multi-agent-persian)** ![Agent](https://img.shields.io/badge/Multi--Agent-amber?style=flat-square) — Production-grade multi-agent architecture with Actor-Critic self-critique loops and heterogeneous model routing.
+* **[Rebex (IranRebate AI Agent)](https://github.com/razavioo/iranrebate-ai-agent)** ![Agent](https://img.shields.io/badge/Finance--Agent-amber?style=flat-square) — Interactive Persian workspace for market analysis, trader research, and forex broker transparency on IranRebate.
 * **[Local SQL Agent (Persian)](https://github.com/alisadeghiaghili/local-sql-agent)** ![Agent](https://img.shields.io/badge/Text--to--SQL-amber?style=flat-square) — AST-validated natural-language-to-SQL engine for Persian enterprise databases with column-level ACLs.
 * **[Doctor Agent](https://github.com/SirBNL/doctor-agent)** ![Agent](https://img.shields.io/badge/Agent-amber?style=flat-square) — Persian medical appointment booking agent with zero-shot local tool calling via Ollama.
 * **[Phone Agent](https://github.com/sepehr071/phone-agent)** ![Agent](https://img.shields.io/badge/Voice--Agent-amber?style=flat-square) — Automated PBX telephone receptionist connected over Asterisk AudioSocket (STT -> LLM -> TTS in real-time Persian).
@@ -197,6 +208,7 @@ Tools, datasets, and methodologies for red-teaming and securing Persian AI syste
 * **[wav2vec2-large-xlsr-53-persian](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-persian)** ![STT](https://img.shields.io/badge/STT-blue?style=flat-square) — Most downloaded Persian speech recognition model on Hugging Face (~1M downloads).
 * **[Wav2Vec2 Persian v3 (m3hrdadfi)](https://huggingface.co/m3hrdadfi/wav2vec2-large-xlsr-persian-v3)** ![STT](https://img.shields.io/badge/STT-blue?style=flat-square) — State-of-the-art acoustic model fine-tuned on clean Persian audio benchmarks.
 * **[Whisper-Persian-v4 (nezamisafa)](https://huggingface.co/nezamisafa/whisper-persian-v4)** ![Whisper](https://img.shields.io/badge/Whisper-purple?style=flat-square) — Whisper Large-v3 fine-tuned for colloquial Persian phrases and noisy backgrounds.
+* **[Video Transcript Tool](https://github.com/razavioo/video-transcript-tool)** ![Offline](https://img.shields.io/badge/Audio--Tool-emerald?style=flat-square) — Practical local CLI tool for turning Persian and English videos/audio into clean reviewed transcripts and AI dubbing.
 * **[Persian ASR Leaderboard](https://huggingface.co/spaces/navidved/open_persian_asr_leaderboard)** ![Leaderboard](https://img.shields.io/badge/Leaderboard-pink?style=flat-square) — Competitive WER benchmark comparing Persian speech models on public corpora.
 * **[PersianScribe for Apple Silicon](https://github.com/duuuude/PersianScribe-for-Apple-Silicon)** ![Offline](https://img.shields.io/badge/Offline-emerald?style=flat-square) — Native Mac speech-to-text with speaker diarization optimized for Apple Silicon (M1-M4).
 * **[Nemotron ASR Streaming Farsi](https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi)** ![Streaming](https://img.shields.io/badge/Streaming-cyan?style=flat-square) — Ultra-low latency streaming speech recognition based on NVIDIA Nemotron.
@@ -227,6 +239,7 @@ Tools, datasets, and methodologies for red-teaming and securing Persian AI syste
 ## 9. 📚 Persian Embeddings & Enterprise RAG
 
 ### 9.1. Embedding Models
+* **[Tooka-SBERT (Part AI)](https://huggingface.co/PartAI/Tooka-SBERT-V2-Large)** ![Top-Embedding](https://img.shields.io/badge/Top--Embedding-emerald?style=flat-square) — State-of-the-art Persian Sentence-BERT embedding model trained by Part AI for semantic retrieval and dense passage ranking.
 * **[Persian Embeddings (heydariAI)](https://huggingface.co/heydariAI/persian-embeddings)** ![Top-Embedding](https://img.shields.io/badge/Top--Embedding-emerald?style=flat-square) — Top-rated Persian sentence embedding model trained on large-scale semantic similarity corpora.
 * **[BGE-M3 Multilingual](https://github.com/FlagOpen/FlagEmbedding)** ![Multilingual](https://img.shields.io/badge/Multilingual-blue?style=flat-square) — Frontier multilingual model with robust support for complex Persian semantic retrieval across dense and sparse queries.
 * **[ParsBERT NLI](https://huggingface.co/parsi-ai-nlpclass/ParsBERT-nli-FarsTail-FarSick)** ![NLI](https://img.shields.io/badge/NLI-violet?style=flat-square) — Natural language inference model for document contradiction and entailment verification.
@@ -262,6 +275,7 @@ Tools, datasets, and methodologies for red-teaming and securing Persian AI syste
 
 ## 12. 🖥️ Developer Tools, RTL Fixers & Terminals
 
+* **[opencode-rtl](https://github.com/razavioo/opencode-rtl)** ![DevTool](https://img.shields.io/badge/OpenCode--Plugin-blue?style=flat-square) ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) — Comprehensive right-to-left language plugin for opencode CLI; preserves code blocks, terminal diffs, and bash outputs in Persian and Arabic conversations.
 * **[RTL Support for VS Code Agents](https://github.com/GuyRonnen/rtl-for-vs-code-agents)** ![VS-Code](https://img.shields.io/badge/VS--Code-blue?style=flat-square) — Native-like Right-to-Left (RTL) rendering in VS Code AI agents (GitHub Copilot, Cursor) while keeping English code blocks cleanly LTR formatted.
 * **[Kivun Terminal](https://github.com/noambrand/kivun-terminal-wsl)** ![Terminal](https://img.shields.io/badge/Terminal-slate?style=flat-square) — Cross-platform terminal with a native BiDi engine ensuring Anthropic's Claude Code and agent outputs render without reversed Persian characters.
 * **[BiDi Shaper](https://github.com/cc1a2b/bidi-shaper)** ![Text-Shaping](https://img.shields.io/badge/Text--Shaping-emerald?style=flat-square) — Zero-dependency Unicode UAX #9 engine and contextual glyph shaper for Canvas, WebGL, three.js, and terminals.
@@ -273,7 +287,22 @@ Tools, datasets, and methodologies for red-teaming and securing Persian AI syste
 
 ---
 
-## 13. 📊 Large-Scale Datasets & Corpora
+## 13. ⚡ Anti-Sanction Bypass & Developer Connectivity
+
+Essential utilities built by the Iranian community to bypass developer-targeted sanctions, 403 HTTP errors, and region blocks on international services (Google Cloud, Docker Hub, OpenAI, Anthropic, Hugging Face, Gradle):
+
+* **[Shecan (شکن)](https://shecan.ir)** ![Free](https://img.shields.io/badge/SmartDNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/403--Bypass-cyan?style=flat-square) — Leading Iranian anti-sanction SmartDNS service enabling seamless developer access to restricted developer tools and cloud portals.
+* **[403.online (۴۰۳ آنلاین)](https://403.online)** ![Free](https://img.shields.io/badge/Anti--Sanction-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/DevTools-cyan?style=flat-square) — Dedicated developer platform providing SmartDNS resolution specifically curated for libraries, package registries, and developer domains.
+* **[Electro TM (الکترو)](https://elctrotm.org)** ![Free](https://img.shields.io/badge/SmartDNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Gaming--Dev-cyan?style=flat-square) — High-speed SmartDNS and proxy client designed for ultra-low latency, game servers, and developer services.
+* **[Radar Game (رادار)](https://radar.game)** ![Free](https://img.shields.io/badge/DNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Low--Latency-cyan?style=flat-square) — Specialized DNS service reducing network latency and unblocking CDN-level developer resources.
+* **[Begzar (بگذر)](https://begzar.ir)** ![Free](https://img.shields.io/badge/SmartDNS-free-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Unblocker-cyan?style=flat-square) — Community-driven anti-sanction DNS service tailored for developer workstation configurations.
+* **[DNS Changer Desktop](https://github.com/DnsChanger/dnsChanger-desktop)** ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Cross--Platform-blue?style=flat-square) — Modern open-source desktop utility for Windows, macOS, and Linux to quickly toggle between Shecan, 403, Electro, and Cloudflare DNS.
+* **[Smart DNS IR Optimizer](https://github.com/erfnzdeh/smart-dns-ir)** ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Server--Tool-slate?style=flat-square) — Self-healing DNS optimizer for Iranian servers; benchmarks 60+ resolvers, manages local caching, and auto-configures Docker daemon DNS.
+* **[HyperDNS](https://github.com/IzumiRain/HyperDNS)** ![Open-Source](https://img.shields.io/badge/Open--Source-emerald?style=flat-square) ![Connectivity](https://img.shields.io/badge/Go--Gateway-cyan?style=flat-square) — Next-gen standalone SmartDNS and multi-port SNI proxy in Go featuring an anti-sanction 403 bypass engine and web controller.
+
+---
+
+## 14. 📊 Large-Scale Datasets & Corpora
 
 * **[PersianQA](https://github.com/sajjjadayobi/PersianQA)** ![QA](https://img.shields.io/badge/QA-violet?style=flat-square) — Gold-standard Persian reading comprehension dataset based on Persian Wikipedia with 9,000+ QA pairs.
 * **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** ![Audio](https://img.shields.io/badge/Audio-orange?style=flat-square) — Largest open transcribed Persian speech corpus containing 114+ hours of high-quality speech.
