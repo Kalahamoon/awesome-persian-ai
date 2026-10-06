@@ -42,7 +42,8 @@
 | `[API-Gateway]` | **درگاه API** | سرویس ارائه‌دهنده توکن و کلید API سازگار با استاندارد OpenAI / Claude |
 | `[Agent]` | **عامل هوشمند** | ابزارها و سیستم‌های دارای چرخه تصمیم‌گیری و اجرای وظایف چندمرحله‌ای |
 | `[Leaderboard]` | **لیدربورد و ارزیابی** | جداول رتبه‌بندی رقابتی و بنچ‌مارک‌های اعتبارسنجی مدل‌ها |
-| `[Multimodal]` | **چندوجهی** | مدل‌های متصل‌کننده متن به تصویر، ویدیو یا صوت (مانند CLIP) |
+| `[Security]` | **امنیت و گاردریل** | ایمنی مدل، آزمون‌های نفوذ پرامپت و دیواره‌های آتش زبانی |
+| `[Domain-AI]` | **هوش مصنوعی تخصصی** | مدل‌ها و سامانه‌های اختصاصی حقوقی، پزشکی و مالی |
 | `[Free]` | **کاملاً رایگان** | استفاده بدون هزینه مالی و محدودیت پرداختی |
 | `[Freemium]` | **اعتبار اولیه / حجمی** | دارای بسته تست رایگان با امکان خرید بسته‌های مصرفی |
 | `[Commercial]` | **تجاری / سازمانی** | نیازمند اشتراک، خرید کلید تجاری یا قرارداد شرکتی |
@@ -64,17 +65,19 @@
   - [3.1. مدل‌های متن‌باز و وزن‌های زبانی](#31-مدلهای-متنباز-و-وزنهای-زبانی)
   - [3.2. لیدربوردها و بنچ‌مارک‌های ارزیابی (Leaderboards & Evals)](#32-لیدربوردها-و-بنچمارکهای-ارزیابی-leaderboards--evals)
 - [4. 🤖 فریم‌ورک‌ها و سیستم‌های چندایجنتیک (Agentic Frameworks)](#4--فریمورکها-و-سیستمهای-چندایجنتیک-agentic-frameworks)
-- [5. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)](#5--پردازش-گفتار-صوت-و-دوبله-speech-stt--tts)
-  - [5.1. تبدیل گفتار به متن (Speech-to-Text)](#51-تبدیل-گفتار-به-متن-speech-to-text)
-  - [5.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)](#52-تبدیل-متن-به-گفتار-و-شبیهسازی-صدا-text-to-speech)
-- [6. 👁️ بینایی ماشین و مدل‌های چندوجهی (Vision, OCR & Multimodal)](#6--بینایی-ماشین-و-مدلهای-چندوجهی-vision-ocr--multimodal)
-- [7. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)](#7--ابزارهای-بازیابی-اطلاعات-و-rag-بومی-persian-rag--embeddings)
-  - [7.1. مدل‌های برداری (Embedding Models)](#71-مدلهای-برداری-embedding-models)
-  - [7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#72-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
-- [8. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)](#8--کتابخانهها-و-ابزارهای-مهندسی-زبان-persian-nlp-toolkits)
-- [9. 🌐 ترجمه ماشینی و ترنسفر زبان (Neural Machine Translation)](#9--ترجمه-ماشینی-و-ترنسفر-زبان-neural-machine-translation)
-- [10. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)](#10--افزونهها-ابزارهای-مرورگر-و-محیطهای-توسعه-extensions--devtools)
-- [11. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#11--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
+- [5. 🛡️ امنیت مدل‌های زبانی، گاردریل و ایمنی پرامپت (LLM Security & Guardrails)](#5--امنیت-مدلهای-زبانی-گاردریل-و-ایمنی-پرامپت-llm-security--guardrails)
+- [6. ⚖️🩺 هوش مصنوعی در حوزه‌های تخصصی: حقوقی و سلامت (Domain-Specific AI)](#6-️-هوش-مصنوعی-در-حوزههای-تخصصی-حقوقی-و-سلامت-domain-specific-ai)
+- [7. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)](#7--پردازش-گفتار-صوت-و-دوبله-speech-stt--tts)
+  - [7.1. تبدیل گفتار به متن (Speech-to-Text)](#71-تبدیل-گفتار-به-متن-speech-to-text)
+  - [7.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)](#72-تبدیل-متن-به-گفتار-و-شبیهسازی-صدا-text-to-speech)
+- [8. 👁️ بینایی ماشین و مدل‌های چندوجهی (Vision, OCR & Multimodal)](#8--بینایی-ماشین-و-مدلهای-چندوجهی-vision-ocr--multimodal)
+- [9. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)](#9--ابزارهای-بازیابی-اطلاعات-و-rag-بومی-persian-rag--embeddings)
+  - [9.1. مدل‌های برداری (Embedding Models)](#91-مدلهای-برداری-embedding-models)
+  - [9.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی](#92-موتورها-و-پایپلاینهای-آماده-rag-سازمانی)
+- [10. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)](#10-️-کتابخانهها-و-ابزارهای-مهندسی-زبان-persian-nlp-toolkits)
+- [11. 🌐 ترجمه ماشینی و ترنسفر زبان (Neural Machine Translation)](#11--ترجمه-ماشینی-و-ترنسفر-زبان-neural-machine-translation)
+- [12. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)](#12-️-افزونهها-ابزارهای-مرورگر-و-محیطهای-توسعه-extensions--devtools)
+- [13. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)](#13--دیتاستها-و-منابع-ارزیابی-داده-datasets--corpora)
 
 ---
 
@@ -162,7 +165,6 @@
 * **[ParsiEval](https://github.com/mshojaei77/ParsiEval)** `[Open-Source]` `[Benchmark]` — ارزیابی توانایی درک متون، استدلال و ریاضیات در مدل‌های زبانی بزرگ برای زبان فارسی.
 * **[ParsBench](https://github.com/ParsBench/ParsBench)** `[Open-Source]` `[Toolkit]` — مجموعه ابزار و دیتاست برای محک زدن تسک‌های پیشرفته زبان فارسی.
 * **[TAAROFBENCH](https://github.com/niktaas/TAAROFBENCH)** `[Research]` `[EMNLP 2025]` — ارزیابی مدل‌های زبانی در درک فرهنگ رفتاری، کنایه‌ها و تعارف در ارتباطات ایرانی.
-* **[Persian-LLM-Security-Evaluation](https://github.com/Haniyesabeghi/Persian-LLM-Security-Evaluation-BA)** `[Research]` — فریم‌ورک تحلیل آسیب‌پذیری و ارزیابی نفوذ از طریق Prompt Injection روی مدل‌های بومی درنا و مرال.
 
 ---
 
@@ -179,9 +181,34 @@
 
 ---
 
-## 5. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)
+## 5. 🛡️ امنیت مدل‌های زبانی، گاردریل و ایمنی پرامپت (LLM Security & Guardrails)
 
-### 5.1. تبدیل گفتار به متن (Speech-to-Text)
+ابزارها و پژوهش‌های حیاتی در زمینه پیشگیری از حملات تزریق پرامپت (Prompt Injection) و دور زدن گاردریل‌ها در زبان فارسی:
+
+* **[MCI LLM Security Hackathon Archive](https://github.com/erfnzdeh/MCI-LLM-Security-Hackathon)** `[Security]` `[Jailbreak-Research]` — گزارش و سناریوهای واقعی آزمون نفوذ و جیل‌بریک مدل‌های زبانی فارسی از طریق تکنیک‌های Cross-lingual و حمله چارچوب‌بندی (Framing).
+* **[Persian LLM Security Evaluation](https://github.com/Haniyesabeghi/Persian-LLM-Security-Evaluation-BA)** `[Security]` `[Prompt-Injection]` — ارزیابی آسیب‌پذیری و استراتژی‌های دفاعی روی مدل‌های زبانی درنا و مرال با اولاما.
+* **[Morphological Type Guards (MTG)](https://github.com/Moshe-ship/mtg)** `[Security]` `[Tool-Calling-Defense]` — لایه امنیتی تایپ‌شده برای فراخوانی ابزار در ایجنت‌ها؛ تشخیص کاراکترهای فریبنده فارسی/عربی (UTS #39) و جلوگیری از حملات تداخل جهت‌گیری (BiDi Hijacking).
+* **[PAIB Benchmark](https://github.com/Romohub/paib)** `[Security]` `[Agent-Integrity]` — بنچ‌مارک ارزیابی یکپارچگی ایجنت‌های فارسی در برابر دستکاری دستورات و مجوزهای ابزار.
+
+---
+
+## 6. ⚖️🩺 هوش مصنوعی در حوزه‌های تخصصی: حقوقی و سلامت (Domain-Specific AI)
+
+### 6.1. حقوق، قضا و قراردادها (Legal AI)
+* **[Persian Legal Practice OS](https://github.com/ansariaiadmin/legal-platform)** `[Open-Source]` `[LegalTech]` — سیستم‌عامل سلف‌هاستد برای دفاتر وکالت و حقوق‌دانان ایرانی با ۶ ایجنت هوشمند، RAG سه‌گانه و پردازشگر متن حقوقی.
+* **[Persian Legal RAG Agent](https://github.com/Hamidreza-Talei/persian-legal-rag-agent)** `[Open-Source]` `[LangGraph]` — سیستم پاسخگویی به سوالات حقوقی مدنی و کیفری ایران با LanceDB و بازرتبه‌بندی معنایی.
+* **[Smart Legal Letterhead](https://github.com/ahmadsalamifar/smart-legal-letterhead)** `[Open-Source]` `[Automation]` — ویرایشگر و تولیدکننده هوشمند لوایح و سربرگ‌های حقوقی به زبان فارسی.
+
+### 6.2. پزشکی، داروسازی و سلامت (Healthcare AI)
+* **[PerMed (Persian Meditron)](https://github.com/neda-kheirkhah/PerMed)** `[Open-Source]` `[Medical-LLM]` — مدل زبانی تخصصی پزشکی و دارویی فارسی مبتنی بر معماری Meditron برای پاسخگویی به پرسش‌های بالینی.
+* **[Persian Medical RAG Chatbot](https://github.com/yousef-mousavizade/Persian-Medical-RAG-Chatbot)** `[Open-Source]` `[Healthcare]` — چت‌بات هوشمند اطلاعات دارویی و علائم بالینی مبتنی بر معماری RAG و پایگاه داده‌های پزشکی ایران.
+* **[OSCE AI Tutor](https://github.com/NafisSam/osce-tutor)** `[Open-Source]` `[Medical-Education]` — شبیه‌ساز هوش مصنوعی آزمون‌های بالینی OSCE برای دانشجویان پزشکی ایران با ارزیابی چک‌لیست‌های شرح‌حال‌گیری.
+
+---
+
+## 7. 🎙️ پردازش گفتار، صوت و دوبله (Speech: STT & TTS)
+
+### 7.1. تبدیل گفتار به متن (Speech-to-Text)
 
 * **[wav2vec2-large-xlsr-53-persian](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-persian)** `[HuggingFace]` `[STT]` — پردانلودترین مدل تشخیص گفتار فارسی در هاگینگ‌فیس با نزدیک به یک میلیون بار دریافت.
 * **[Wav2Vec2 Persian v3 (m3hrdadfi)](https://huggingface.co/m3hrdadfi/wav2vec2-large-xlsr-persian-v3)** `[Open-Source]` — مدل بهینه‌شده wav2vec2 برای بازشناسی گفتار فارسی با نرخ خطای واژگانی بسیار پایین.
@@ -192,7 +219,7 @@
 * **[فارس‌آوا (FarsAva / Amerandish)](https://amerandish.com)** `[Commercial]` `[API]` — از باسابقه‌ترین سرویس‌های تجاری تایپ صوتی و تبدیل گفتار به متن با دقت بسیار بالا در محیط‌های پرسروصدا.
 * **[IoType (آی‌او تایپ)](https://www.iotype.com/api)** `[Freemium]` `[API]` — وب‌سرویس و API تایپ صوتی و تبدیل فایل‌های صوتی ضبط‌شده به متن ویرایش‌شده.
 
-### 5.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)
+### 7.2. تبدیل متن به گفتار و شبیه‌سازی صدا (Text-to-Speech)
 
 * **[Chatterbox-TTS-Persian-Farsi](https://huggingface.co/Thomcles/Chatterbox-TTS-Persian-Farsi)** `[HuggingFace]` `[TTS]` — محبوب‌ترین و طبیعی‌ترین مدل تبدیل متن به صوت فارسی در هاگینگ‌فیس.
 * **[Pocket TTS Farsi (ONNX)](https://huggingface.co/Nimaone/pocket-tts-farsi-v2-onnx)** `[Open-Source]` `[Lightweight]` — سنتز گفتار بسیار سبک با فرمت ONNX با قابلیت اجرا روی دستگاه‌های موبایل و سرورهای کم‌مصرف.
@@ -203,7 +230,7 @@
 
 ---
 
-## 6. 👁️ بینایی ماشین و مدل‌های چندوجهی (Vision, OCR & Multimodal)
+## 8. 👁️ بینایی ماشین و مدل‌های چندوجهی (Vision, OCR & Multimodal)
 
 * **[CLIPfa (سجاد ایوبی)](https://github.com/sajjjadayobi/CLIPfa)** `[Open-Source]` `[Multimodal]` — مدل اتصال متن و تصویر در زبان فارسی (بر پایه CLIP OpenAI) برای جستجوی تصویری با پرسش‌های فارسی و دسته‌بندی صفر-شات تصویر.
 * **[Qwen2-VL-Persian-Arabic-OCR](https://huggingface.co/mohajesmaeili/Qwen3-VL-2B-Persian-Arabic-Ocr-v1.0)** `[Vision-LLM]` — مدل بینایی زبان (VLM) ویژه خواندن و دیجیتالی کردن اسناد خطی، چاپی و فرمول‌های ریاضی فارسی.
@@ -214,23 +241,22 @@
 
 ---
 
-## 7. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)
+## 9. 📚 ابزارهای بازیابی اطلاعات و RAG بومی (Persian RAG & Embeddings)
 
-### 7.1. مدل‌های برداری (Embedding Models)
+### 9.1. مدل‌های برداری (Embedding Models)
 
 * **[Persian Embeddings (heydariAI)](https://huggingface.co/heydariAI/persian-embeddings)** `[HuggingFace]` `[Top-Embedding]` — از محبوب‌ترین مدل‌های برداری فارسی آموزش‌دیده روی پیکره‌های بزرگ معنایی با دقت بالا در تسک‌های شباهت متن.
 * **[BGE-M3 Multilingual](https://github.com/FlagOpen/FlagEmbedding)** `[Open-Source]` — یکی از دقیق‌ترین مدل‌های چندزبانه با فهم عمیق معنایی جملات پیچیده فارسی در هر دو روش متراکم (Dense) و کلمه‌کلیدی (Sparse).
 * **[ParsBERT NLI](https://huggingface.co/parsi-ai-nlpclass/ParsBERT-nli-FarsTail-FarSick)** `[Open-Source]` — مدل استنتاج معنایی و ارزیابی تطابق اسناد فارسی.
 
-### 7.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی
+### 9.2. موتورها و پایپ‌لاین‌های آماده RAG سازمانی
 
 * **[PersianRAG (TahaBakhtari)](https://github.com/TahaBakhtari/PersianRAG)** `[Open-Source]` — پایپ‌لاین آماده پرسش و پاسخ بر روی مستندات اداری و کتاب‌های فارسی با رابط کاربری کاربرپسند.
 * **[Bank Chatbot Legal RAG](https://github.com/Muhammad-davoudi/bank-chatbot)** `[Open-Source]` — پیاده‌سازی کاربردی سیستم پاسخگویی به مقررات بانکی و بخشنامه‌های دولتی با کنترل توهم مدل (Anti-hallucination).
-* **[Persian Legal RAG Agent](https://github.com/Hamidreza-Talei/persian-legal-rag-agent)** `[Open-Source]` — سیستم ایجنتیک پاسخگویی به سوالات حقوقی با ترکیب LangGraph، دیتابیس LanceDB و ارزیابی RAGAS.
 
 ---
 
-## 8. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)
+## 10. 🛠️ کتابخانه‌ها و ابزارهای مهندسی زبان (Persian NLP Toolkits)
 
 | ابزار | برچسب‌ها | زبان | ویژگی و ماموریت |
 | :--- | :---: | :---: | :--- |
@@ -245,7 +271,7 @@
 
 ---
 
-## 9. 🌐 ترجمه ماشینی و ترنسفر زبان (Neural Machine Translation)
+## 11. 🌐 ترجمه ماشینی و ترنسفر زبان (Neural Machine Translation)
 
 * **[mT5-ParsiNLU Opus Translation (FA-EN)](https://huggingface.co/persiannlp/mt5-small-parsinlu-opus-translation_fa_en)** `[HuggingFace]` `[NMT]` — مدل ترجمه عصبی پیشرفته دوطرفه فارسی به انگلیسی با بیش از ۵۰ هزار بار دانلود در هاگینگ‌فیس.
 * **[Persian-To-English LoRA Translator](https://github.com/Mahdi-Maaref/Persian-To-English-Translator)** `[Open-Source]` `[PEFT]` — مدل سبک ترجمه با تنظیم پارامتری (LoRA) با حفظ لحن معنایی برای دیپلوی در سرورهای با منابع محدود.
@@ -253,10 +279,11 @@
 
 ---
 
-## 10. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)
+## 12. 🖥️ افزونه‌ها، ابزارهای مرورگر و محیط‌های توسعه (Extensions & DevTools)
 
 * **[RTL Support for VS Code Agents](https://github.com/GuyRonnen/rtl-for-vs-code-agents)** `[VS-Code-Extension]` — پشتیبانی رسمی و حرفه‌ای از چیدمان راست‌به‌چپ (RTL) در ایجنت‌های کدنویسی VS Code مانند GitHub Copilot با حفظ ساختار بلوک‌های کد LTR.
 * **[Kivun Terminal (Claude Code RTL)](https://github.com/noambrand/kivun-terminal-wsl)** `[DevTool]` `[Terminal]` — ترمینال تصحیح‌کننده خروجی دوجهته (BiDi) برای اجرای بی‌نقص Claude Code و ایجنت‌های متنی به زبان فارسی بدون به هم ریختگی حروف.
+* **[BiDi Shaper](https://github.com/cc1a2b/bidi-shaper)** `[Open-Source]` `[Text-Shaping]` — کتابخانه مستقل و بدون وابستگی برای چیدمان صحیح متون راست‌به‌چپ، اتصالات حروف فارسی/عربی و الگوریتم یونیکد UAX #9 در بوم‌های نقاشی (Canvas/WebGL) و ترمینال‌ها.
 * **[Nimruz Desktop](https://github.com/xmannii/nimruz-desktop)** `[Open-Source]` `[Desktop UI]` — رابط کاربری گرافیکی و مدرن دسکتاپ برای چت با مدل‌های محلی و خارجی به زبان فارسی.
 * **[Hermes Agent Farsi](https://github.com/m4tinbeigi-official/hermes-agent-farsi)** `[UI-Mod]` — فارسی‌سازی کامل داشبورد، راست‌چین‌سازی (RTL) و فونت وزیرمتن برای فریم‌ورک محبوب Hermes Agent.
 * **[Persian AI RTL Assistant](https://github.com/tig-ndi/persian-ai-rtl-assistant)** `[Browser-Extension]` — اصلاح جهت نمایش (RTL) و فونت فارسی در صفحات ChatGPT، Claude، DeepSeek و Mistral.
@@ -265,7 +292,7 @@
 
 ---
 
-## 11. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
+## 13. 📊 دیتاست‌ها و منابع ارزیابی داده (Datasets & Corpora)
 
 * **[PersianQA](https://github.com/sajjjadayobi/PersianQA)** `[Dataset]` `[QA]` — اولین مجموعه داده استاندارد پرسش و پاسخ زبان فارسی مبتنی بر متون ویکی‌پدیا با بیش از ۹,۰۰۰ جفت پرسش و پاسخ.
 * **[ManaTTS Speech Dataset](https://github.com/MahtaFetrat/ManaTTS-Persian-Speech-Dataset)** `[Audio Dataset]` — بزرگ‌ترین دیتاست متن‌باز گفتار فارسی با بیش از ۱۱۴ ساعت صوت بازنویسی‌شده با ابزارهای جمع‌آوری داده.
